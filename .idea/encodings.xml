@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/ajax/json/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ajax/json/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/servlet/001/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/servlet/001/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/servlet/st002rumen/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/servlet/st002rumen/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring/spring001/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring/spring001/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring/spring002/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring/spring002/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ssm/ssm01/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ssm/ssm01/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

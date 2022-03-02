@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/JAVAWEB17.iml" filepath="$PROJECT_DIR$/JAVAWEB17.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ajax/json/json01.iml" filepath="$PROJECT_DIR$/ajax/json/json01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/servlet/001/servlet001.iml" filepath="$PROJECT_DIR$/servlet/001/servlet001.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring/spring001/spring001.iml" filepath="$PROJECT_DIR$/spring/spring001/spring001.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring/spring002/spring002.iml" filepath="$PROJECT_DIR$/spring/spring002/spring002.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ssm/ssm01/ssm01.iml" filepath="$PROJECT_DIR$/ssm/ssm01/ssm01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/servlet/st002rumen/st002rumen.iml" filepath="$PROJECT_DIR$/servlet/st002rumen/st002rumen.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="userDao" class="com.example.spring001.dao.Impl.UserDaoImpl">
+         <!--  index用来确定顺序-->
+        <constructor-arg index="0" value="账号"/>
+        <constructor-arg index="1" value="密码"/>
+    </bean>
+    <bean id="user" class="com.example.spring001.userimpl">
+<!--        使用构造方法进行set注入，需要保障注入的属性与bean中定义的属性一致-->
+<!--        一致指顺序一致或类型一致或使用index解决该问题-->
+        <constructor-arg index="0" name="userDao" ref="userDao"/>
+        <constructor-arg index="1" name="num" value="666"/>
+        <constructor-arg index="2" name="vr" value="黑马"/>
+    </bean>
+
+</beans>

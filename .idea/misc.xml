@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/ajax/json" />
+    <file type="web" url="file://$PROJECT_DIR$/servlet/001" />
+    <file type="web" url="file://$PROJECT_DIR$/servlet/st002rumen" />
+    <file type="web" url="file://$PROJECT_DIR$/spring" />
+    <file type="web" url="file://$PROJECT_DIR$/ssm/ssm01" />
+    <file type="web" url="file://$PROJECT_DIR$/ssm01" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/ajax/json/pom.xml" />
+        <option value="$PROJECT_DIR$/servlet/pom.xml" />
+        <option value="$PROJECT_DIR$/servlet/001/st002rumen/pom.xml" />
+        <option value="$PROJECT_DIR$/servlet/001/pom.xml" />
+        <option value="$PROJECT_DIR$/servlet/st002rumen/pom.xml" />
+        <option value="$PROJECT_DIR$/ssm01/pom.xml" />
+        <option value="$PROJECT_DIR$/ssm/ssm01/pom.xml" />
+        <option value="$PROJECT_DIR$/spring/pom.xml" />
+        <option value="$PROJECT_DIR$/spring/spring001/pom.xml" />
+        <option value="$PROJECT_DIR$/spring/spring002/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_16" project-jdk-name="17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

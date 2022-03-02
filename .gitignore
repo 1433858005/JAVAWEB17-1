@@ -1,0 +1,7 @@
+# 项目排除路径
+/ajax/json/target/
+/servlet/001/target/
+/servlet/st002rumen/target/
+/spring/spring001/target/
+/spring/spring002/target/
+/ssm/ssm01/target/

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="userDao" class="com.example.spring001.dao.Impl.UserDaoImpl">
+         <!--  index用来确定顺序-->
+        <constructor-arg index="0" value="账号"/>
+        <constructor-arg index="1" value="密码"/>
+    </bean>
+    <bean id="user" class="com.example.spring001.userimpl">
+    <property name="userDao" ref="userDao"/>
+    <property name="bookDao" ref="bookDao"/>
+    </bean>
+    <bean id="bookDao" class="com.example.spring001.dao.Impl.BookDaoImpl">
+        <property name="al">
+            <list>
+                <value>itheima</value>
+                <value>9999</value>
+            </list>
+        </property>
+        <property name="properties">
+            <props>
+                <prop key="name">heima6666</prop>
+                <prop key="value">6666</prop>
+            </props>
+        </property>
+        <property name="arr">
+            <array>
+                <value>123456</value>
+                <value>9999</value>
+            </array>
+        </property>
+        <property name="hs">
+            <set>
+                <value>itheima</value>
+                <value>9999</value>
+            </set>
+        </property>
+        <property name="hm">
+  <map>
+      <entry key="name" value="itheima666666"/>
+      <entry key="value" value="666666"/>
+  </map>
+        </property>
+    </bean>
+</beans>
