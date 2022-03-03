@@ -10,9 +10,11 @@
         <module name="st002rumen" />
         <module name="json01" />
         <module name="ssm01" />
+        <module name="spring003" />
         <module name="spring001" />
-        <module name="servlet001" />
         <module name="spring002" />
+        <module name="spring005" />
+        <module name="servlet001" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -20,6 +22,8 @@
       <module name="servlet001" target="1.8" />
       <module name="spring001" target="1.8" />
       <module name="spring002" target="1.8" />
+      <module name="spring003" target="1.8" />
+      <module name="spring005" target="1.8" />
       <module name="spring01" target="1.8" />
       <module name="ssm01" target="1.8" />
       <module name="st002rumen" target="1.8" />
