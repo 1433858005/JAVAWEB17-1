@@ -1,20 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xmlns:context="http://www.springframework.org/schema/context"
-       xsi:schemaLocation="
-       http://www.springframework.org/schema/beans
-       http://www.springframework.org/schema/beans/spring-beans.xsd
-       http://www.springframework.org/schema/context
-       http://www.springframework.org/schema/context/spring-context.xsd
-">
-    <!--    1加载context命名空间的支持-->
-    <!--    xmlns:context="http://www.springframework.org/schema/context"-->
-<!--    启动注解驱动，指定对应扫描的路径，也就是资源所在的包-->
-    <context:component-scan base-package="com.example.spring001"/>
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+<!--<beans xmlns="http://www.springframework.org/schema/beans"-->
+<!--       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"-->
+<!--       xmlns:context="http://www.springframework.org/schema/context"-->
+<!--       xsi:schemaLocation="-->
+<!--       http://www.springframework.org/schema/beans-->
+<!--       http://www.springframework.org/schema/beans/spring-beans.xsd-->
+<!--       http://www.springframework.org/schema/context-->
+<!--       http://www.springframework.org/schema/context/spring-context.xsd-->
+<!--">-->
+<!--    &lt;!&ndash;    1加载context命名空间的支持&ndash;&gt;-->
+<!--    &lt;!&ndash;    xmlns:context="http://www.springframework.org/schema/context"&ndash;&gt;-->
+<!--&lt;!&ndash;    启动注解驱动，指定对应扫描的路径，也就是资源所在的包&ndash;&gt;-->
+<!--    <context:component-scan base-package="com.example.spring001"/>-->
 
-<!--    <bean id="user"    class="com.example.spring001.service.Impl.userimpl"/>-->
-<!--    <bean id="userDao" class="com.example.spring001.dao.Impl.UserDaoImpl"/>-->
-<!--    <bean id="bookDao" class="com.example.spring001.dao.Impl.BookDaoImpl"/>-->
+<!--&lt;!&ndash;    <bean id="user"    class="com.example.spring001.service.Impl.userimpl"/>&ndash;&gt;-->
+<!--&lt;!&ndash;    <bean id="userDao" class="com.example.spring001.dao.Impl.UserDaoImpl"/>&ndash;&gt;-->
+<!--&lt;!&ndash;    <bean id="bookDao" class="com.example.spring001.dao.Impl.BookDaoImpl"/>&ndash;&gt;-->
 
-</beans>
+<!--</beans>-->

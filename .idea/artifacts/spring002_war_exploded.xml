@@ -6,7 +6,6 @@
         <exploded>true</exploded>
         <module>spring002</module>
         <packaging>war</packaging>
-        <unpackNestedArchives>false</unpackNestedArchives>
       </options>
     </properties>
     <root id="root">
@@ -21,6 +20,7 @@
           <element id="library" level="project" name="Maven: org.springframework:spring-core:5.1.9.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-jcl:5.1.9.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-expression:5.1.9.RELEASE" />
+          <element id="library" level="project" name="Maven: org.aspectj:aspectjweaver:1.9.8" />
         </element>
       </element>
       <element id="directory" name="META-INF">

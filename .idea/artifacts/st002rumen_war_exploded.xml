@@ -6,13 +6,15 @@
         <exploded>true</exploded>
         <module>st002rumen</module>
         <packaging>war</packaging>
-        <unpackNestedArchives>false</unpackNestedArchives>
       </options>
     </properties>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="st002rumen" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: org.aspectj:aspectjweaver:1.9.8" />
         </element>
       </element>
       <element id="directory" name="META-INF">

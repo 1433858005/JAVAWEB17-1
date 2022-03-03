@@ -13,7 +13,10 @@
         <module name="spring003" />
         <module name="spring001" />
         <module name="spring002" />
+        <module name="spring007" />
         <module name="spring005" />
+        <module name="spring006" />
+        <module name="spring009" />
         <module name="servlet001" />
       </profile>
     </annotationProcessing>
@@ -24,6 +27,10 @@
       <module name="spring002" target="1.8" />
       <module name="spring003" target="1.8" />
       <module name="spring005" target="1.8" />
+      <module name="spring006" target="1.8" />
+      <module name="spring007" target="1.8" />
+      <module name="spring008" target="1.8" />
+      <module name="spring009" target="1.8" />
       <module name="spring01" target="1.8" />
       <module name="ssm01" target="1.8" />
       <module name="st002rumen" target="1.8" />
