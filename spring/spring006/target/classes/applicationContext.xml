@@ -12,9 +12,9 @@
        http://www.springframework.org/schema/aop
        http://www.springframework.org/schema/aop/spring-aop.xsd">
 <!--      3.开启AOP命名空间-->
-    <bean id="userService" class="com.itheima.service.impl.UserServiceImpl"/>
+    <bean id="userService" class="com.UserServiceImpl"/>
 <!--    2.配置共性功能成为spring控制资源-->
-    <bean id="myAdvice" class="com.itheima.aop.AOPAdvice"/>
+    <bean id="myAdvice" class="com.AOPAdvice"/>
 <!--    4.配置AOP-->
     <aop:config>
 <!--        5.配置切入点-->

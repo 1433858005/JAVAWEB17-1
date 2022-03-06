@@ -6,6 +6,9 @@ public class App {
     public static void main(String[] args) {
         ApplicationContext ctx=new ClassPathXmlApplicationContext("applicationContext.xml");
         UserService userService= (UserService) ctx.getBean("userService");
-        userService.save();
+//        userService.save(666);
+//        int ret = userService.update();
+//        System.out.println("app"+ret);
+        userService.delete();
     }
 }

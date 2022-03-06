@@ -3,15 +3,21 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/JAVAWEB17.iml" filepath="$PROJECT_DIR$/JAVAWEB17.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ziji/xiangmu/english/english.iml" filepath="$PROJECT_DIR$/ziji/xiangmu/english/english.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ziji/lianxi/jdbc/jdbc002/jdbc002.iml" filepath="$PROJECT_DIR$/ziji/lianxi/jdbc/jdbc002/jdbc002.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ziji/lianxi/jdbc/jdbc003/jdbc003.iml" filepath="$PROJECT_DIR$/ziji/lianxi/jdbc/jdbc003/jdbc003.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ziji/lianxi/jdbc/jdbcceshi001/jdbcceshi001.iml" filepath="$PROJECT_DIR$/ziji/lianxi/jdbc/jdbcceshi001/jdbcceshi001.iml" />
       <module fileurl="file://$PROJECT_DIR$/ajax/json/json01.iml" filepath="$PROJECT_DIR$/ajax/json/json01.iml" />
       <module fileurl="file://$PROJECT_DIR$/servlet/001/servlet001.iml" filepath="$PROJECT_DIR$/servlet/001/servlet001.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring/spring001/spring001.iml" filepath="$PROJECT_DIR$/spring/spring001/spring001.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring/spring002/spring002.iml" filepath="$PROJECT_DIR$/spring/spring002/spring002.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring/spring003/spring003.iml" filepath="$PROJECT_DIR$/spring/spring003/spring003.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring/spring004-mybatis/spring004-mybatis.iml" filepath="$PROJECT_DIR$/spring/spring004-mybatis/spring004-mybatis.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring/spring005/spring005.iml" filepath="$PROJECT_DIR$/spring/spring005/spring005.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring/spring006/spring006.iml" filepath="$PROJECT_DIR$/spring/spring006/spring006.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring/spring007/spring007.iml" filepath="$PROJECT_DIR$/spring/spring007/spring007.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring/spring009/spring009.iml" filepath="$PROJECT_DIR$/spring/spring009/spring009.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring/spring010/spring010.iml" filepath="$PROJECT_DIR$/spring/spring010/spring010.iml" />
       <module fileurl="file://$PROJECT_DIR$/ssm/ssm01/ssm01.iml" filepath="$PROJECT_DIR$/ssm/ssm01/ssm01.iml" />
       <module fileurl="file://$PROJECT_DIR$/servlet/st002rumen/st002rumen.iml" filepath="$PROJECT_DIR$/servlet/st002rumen/st002rumen.iml" />
     </modules>

@@ -22,8 +22,13 @@
     </div>
 
     <div class="row">
-        <div class="col-md-4 column">
+        <div class="col-md-4 column" >
             <a class="btn btn-primary" href="${pageContext.request.contextPath}/book/toAddBook">新增</a>
+            <a class="btn btn-primary" id="del">删除</a>
+            <a class="btn btn-primary" id="gai" href="${pageContext.request.contextPath}/book/toUpdateBook?id=0">更改</a>
+        </div>
+        <div id="div1">
+
         </div>
     </div>
 
@@ -58,3 +63,40 @@
         </div>
     </div>
 </div>
+<body>
+<script>
+    let dell = document.getElementById("del");
+    dell.onclick = up;
+
+    function up() {
+        let bb = document.createElement("input");
+        bb.type = "text"
+        bb.placeholder = "输入要删除的id"
+        bb.id = "del1"
+        bb.onblur = up3
+        let bb2 = document.createElement("a");
+        bb2.text = "确定删除"
+        bb2.id = "del2"
+        let bb3 = document.createElement("a");
+        bb3.text = "取消删除"
+        bb3.id = "del3"
+        bb3.href="/book/allBook"
+        // bb2.href="http://blhl.xyz"
+        let div1 = document.getElementById("div1");
+        div1.appendChild(bb);
+        div1.appendChild(bb2);
+        div1.appendChild(bb3);
+        // **********************************
+        // let dell2 = document.getElementById("del2");
+        // dell2.onclick = up2;
+    }
+
+    function up3() {
+        let a = document.getElementById("del1").value;
+        if (a !== "") {
+            let dell2 = document.getElementById("del2");
+            dell2.setAttribute("href", "/book/del/" + a);
+        }
+    }
+</script>
+<html>

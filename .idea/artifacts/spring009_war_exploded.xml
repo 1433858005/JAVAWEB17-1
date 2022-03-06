@@ -15,12 +15,15 @@
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: org.aspectj:aspectjweaver:1.9.8" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-context:5.3.15" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-aop:5.3.15" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-beans:5.3.15" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-core:5.3.15" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-jcl:5.3.15" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-expression:5.3.15" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-context:5.3.16" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-aop:5.3.16" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-beans:5.3.16" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-core:5.3.16" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-jcl:5.3.16" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-expression:5.3.16" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.36" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-reload4j:1.7.36" />
+          <element id="library" level="project" name="Maven: ch.qos.reload4j:reload4j:1.2.19" />
         </element>
       </element>
       <element id="directory" name="META-INF">

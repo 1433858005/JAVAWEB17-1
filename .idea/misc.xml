@@ -7,6 +7,10 @@
     <file type="web" url="file://$PROJECT_DIR$/spring" />
     <file type="web" url="file://$PROJECT_DIR$/ssm/ssm01" />
     <file type="web" url="file://$PROJECT_DIR$/ssm01" />
+    <file type="web" url="file://$PROJECT_DIR$/ziji/lianxi/jdbc/jdbc002" />
+    <file type="web" url="file://$PROJECT_DIR$/ziji/lianxi/jdbc/jdbc003" />
+    <file type="web" url="file://$PROJECT_DIR$/ziji/lianxi/jdbc/jdbcceshi001" />
+    <file type="web" url="file://$PROJECT_DIR$/ziji/xiangmu/english" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -27,10 +31,16 @@
         <option value="$PROJECT_DIR$/spring/spring007/pom.xml" />
         <option value="$PROJECT_DIR$/spring/spring008/pom.xml" />
         <option value="$PROJECT_DIR$/spring/spring009/pom.xml" />
+        <option value="$PROJECT_DIR$/spring/spring010/pom.xml" />
+        <option value="$PROJECT_DIR$/ziji/xiangmu/english/pom.xml" />
+        <option value="$PROJECT_DIR$/ziji/lianxi/jdbc/jdbcceshi001/pom.xml" />
+        <option value="$PROJECT_DIR$/ziji/lianxi/jdbc/jdbc002/pom.xml" />
+        <option value="$PROJECT_DIR$/ziji/lianxi/jdbc/jdbc003/pom.xml" />
+        <option value="$PROJECT_DIR$/spring/spring004-mybatis/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_16" project-jdk-name="17" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_16" project-jdk-name="17 (2)" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>

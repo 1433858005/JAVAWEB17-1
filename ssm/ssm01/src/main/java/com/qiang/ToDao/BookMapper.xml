@@ -19,7 +19,7 @@
     <!--更新Book-->
     <update id="updateBook" parameterType="Books">
         update ssmbuild.books
-        set bookName = #{bookName},bookCounts = #{bookCounts},detail = #{detail}
+        set bookID = #{bookID}, bookName = #{bookName},bookCounts = #{bookCounts},detail = #{detail}
         where bookID = #{bookID}
     </update>
 

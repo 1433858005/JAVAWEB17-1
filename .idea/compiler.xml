@@ -7,31 +7,43 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="st002rumen" />
         <module name="json01" />
         <module name="ssm01" />
+        <module name="spring004-mybatis" />
+        <module name="spring010" />
+        <module name="st002rumen" />
+        <module name="jdbcceshi001" />
+        <module name="jdbc003" />
         <module name="spring003" />
         <module name="spring001" />
         <module name="spring002" />
         <module name="spring007" />
+        <module name="english" />
         <module name="spring005" />
         <module name="spring006" />
+        <module name="jdbc002" />
         <module name="spring009" />
         <module name="servlet001" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="english" target="1.8" />
+      <module name="jdbc002" target="1.8" />
+      <module name="jdbc003" target="9" />
+      <module name="jdbcceshi001" target="1.8" />
       <module name="json01" target="1.8" />
       <module name="servlet001" target="1.8" />
       <module name="spring001" target="1.8" />
       <module name="spring002" target="1.8" />
       <module name="spring003" target="1.8" />
+      <module name="spring004-mybatis" target="1.8" />
       <module name="spring005" target="1.8" />
       <module name="spring006" target="1.8" />
       <module name="spring007" target="1.8" />
       <module name="spring008" target="1.8" />
       <module name="spring009" target="1.8" />
       <module name="spring01" target="1.8" />
+      <module name="spring010" target="1.8" />
       <module name="ssm01" target="1.8" />
       <module name="st002rumen" target="1.8" />
     </bytecodeTargetLevel>
