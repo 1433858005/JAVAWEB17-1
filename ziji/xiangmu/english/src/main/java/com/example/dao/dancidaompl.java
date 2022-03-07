@@ -8,7 +8,7 @@ import static com.example.dao.dao01.allid;
 public class dancidaompl {
     public static void main(String[] args) throws SQLException, ClassNotFoundException {
            int aa=  allid("english.english0001");
-
+tianjia2("english.english0001",10,"10","10");
 //        System.out.println(getname("english.english0002",1));
     }
 

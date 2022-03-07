@@ -19,7 +19,7 @@ public class dao01 {
     public static String tianjia(String a, int b, String c, String d) throws ClassNotFoundException, SQLException {
         Class.forName("com.mysql.cj.jdbc.Driver") ;
 //        gz-cynosdbmysql-grp-i4doar87.sql.tencentcdb.com
-        Connection con =  DriverManager.getConnection("jdbc:mysql://gz-cynosdbmysql-grp-i4doar87.sql.tencentcdb.com:25769", "root", "Jp15149622693");
+        Connection con =  DriverManager.getConnection("jdbc:mysql://localhost/english?useSSL=true&useUnicode=true&characterEncoding=utf8", "root", "15149622693");
         Statement stat = con.createStatement();
         String sql = "INSERT INTO "+a+" VALUES ('"+b+"','"+c+"','"+d+"')";
         stat.execute(sql);
@@ -30,7 +30,7 @@ public class dao01 {
 
     public static int allid(String a) throws SQLException, ClassNotFoundException {
         Class.forName("com.mysql.cj.jdbc.Driver") ;
-        Connection con =  DriverManager.getConnection("jdbc:mysql://gz-cynosdbmysql-grp-i4doar87.sql.tencentcdb.com:25769", "root", "Jp15149622693");
+        Connection con =  DriverManager.getConnection("jdbc:mysql://localhost/english?useSSL=true&useUnicode=true&characterEncoding=utf8", "root", "15149622693");
         Statement stat = con.createStatement();
         int allid=0;
         String sql ="SELECT*FROM "+a+" ORDER  BY id DESC LIMIT 1";
@@ -74,7 +74,7 @@ public class dao01 {
 //    }
 public static String getname(String a,int id) throws SQLException, ClassNotFoundException {
     Class.forName("com.mysql.cj.jdbc.Driver") ;
-    Connection con =  DriverManager.getConnection("jdbc:mysql://gz-cynosdbmysql-grp-i4doar87.sql.tencentcdb.com:25769", "root", "Jp15149622693");
+    Connection con =  DriverManager.getConnection("jdbc:mysql://localhost/english?useSSL=true&useUnicode=true&characterEncoding=utf8", "root", "15149622693");
     Statement stat = con.createStatement();
     String   name = null;
     String sql = "SELECT*FROM "+a+" WHERE id='"+id+"'";
@@ -90,7 +90,7 @@ public static String getname(String a,int id) throws SQLException, ClassNotFound
 }
     public static String getname(int id) throws SQLException, ClassNotFoundException {
         Class.forName("com.mysql.cj.jdbc.Driver") ;
-        Connection con =  DriverManager.getConnection("jdbc:mysql://gz-cynosdbmysql-grp-i4doar87.sql.tencentcdb.com:25769", "root", "Jp15149622693");
+        Connection con =  DriverManager.getConnection("jdbc:mysql://localhost/english?useSSL=true&useUnicode=true&characterEncoding=utf8", "root", "15149622693");
         Statement stat = con.createStatement();
         String   name = null;
         String sql = "SELECT*FROM english.english0001 WHERE id='"+id+"'";
@@ -107,7 +107,7 @@ public static String getname(String a,int id) throws SQLException, ClassNotFound
 
     public static String getfanyi(int id) throws SQLException, ClassNotFoundException {
         Class.forName("com.mysql.cj.jdbc.Driver") ;
-        Connection con =  DriverManager.getConnection("jdbc:mysql://gz-cynosdbmysql-grp-i4doar87.sql.tencentcdb.com:25769", "root", "Jp15149622693");
+        Connection con =  DriverManager.getConnection("jdbc:mysql://localhost/english?useSSL=true&useUnicode=true&characterEncoding=utf8", "root", "15149622693");
         Statement stat = con.createStatement();
         String   name = null;
         String sql = "SELECT*FROM english.english0001 WHERE id='"+id+"'";
@@ -123,7 +123,7 @@ public static String getname(String a,int id) throws SQLException, ClassNotFound
     }
     public static String getfanyi(String a,int id) throws SQLException, ClassNotFoundException {
         Class.forName("com.mysql.cj.jdbc.Driver") ;
-        Connection con =  DriverManager.getConnection("jdbc:mysql://gz-cynosdbmysql-grp-i4doar87.sql.tencentcdb.com:25769", "root", "Jp15149622693");
+        Connection con =  DriverManager.getConnection("jdbc:mysql://localhost/english?useSSL=true&useUnicode=true&characterEncoding=utf8", "root", "15149622693");
         Statement stat = con.createStatement();
         String   name = null;
         String sql = "SELECT*FROM "+a+" WHERE id='"+id+"'";
