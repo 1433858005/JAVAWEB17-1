@@ -18,6 +18,7 @@
       <module fileurl="file://$PROJECT_DIR$/spring/spring007/spring007.iml" filepath="$PROJECT_DIR$/spring/spring007/spring007.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring/spring009/spring009.iml" filepath="$PROJECT_DIR$/spring/spring009/spring009.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring/spring010/spring010.iml" filepath="$PROJECT_DIR$/spring/spring010/spring010.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot/springboot001/springboot001.iml" filepath="$PROJECT_DIR$/springboot/springboot001/springboot001.iml" />
       <module fileurl="file://$PROJECT_DIR$/ssm/ssm01/ssm01.iml" filepath="$PROJECT_DIR$/ssm/ssm01/ssm01.iml" />
       <module fileurl="file://$PROJECT_DIR$/servlet/st002rumen/st002rumen.iml" filepath="$PROJECT_DIR$/servlet/st002rumen/st002rumen.iml" />
     </modules>

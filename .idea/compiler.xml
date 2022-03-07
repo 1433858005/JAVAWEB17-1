@@ -19,6 +19,7 @@
         <module name="spring002" />
         <module name="spring007" />
         <module name="english" />
+        <module name="springboot001" />
         <module name="spring005" />
         <module name="spring006" />
         <module name="jdbc002" />
@@ -44,6 +45,7 @@
       <module name="spring009" target="1.8" />
       <module name="spring01" target="1.8" />
       <module name="spring010" target="1.8" />
+      <module name="springboot001" target="1.8" />
       <module name="ssm01" target="1.8" />
       <module name="st002rumen" target="1.8" />
     </bytecodeTargetLevel>

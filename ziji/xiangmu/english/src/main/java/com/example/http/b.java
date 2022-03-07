@@ -1,4 +1,5 @@
-package com.example.http;//package com.example.http;
+package com.example.http;
+//package com.example.http;//package com.example.http;
 //
 //import javax.servlet.ServletException;
 //import javax.servlet.annotation.WebServlet;
@@ -16,28 +17,23 @@ import java.util.Random;
 
 import static com.example.dao.dao01.*;
 
-@WebServlet("/aa")
-public class servicehttp extends HttpServlet {
+@WebServlet("/b")
+public class b extends HttpServlet {
     @SneakyThrows
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         req.setCharacterEncoding("UTF-8");
         resp.setContentType("text/html;charset=UTF-8");
-        String username=req.getParameter("username");
-        String[] cc =username.split(",");
-        if (cc[0].equals("aa")) {
-            String ab="english."+cc[1];
-            System.out.println(ab);
-            int b=new Random().nextInt(allid(ab))+1;//随机单词的id
+        String shoucang=req.getParameter("shoucang");
+        if (!Objects.equals(shoucang, "")) {
+            String[] cc =shoucang.split(",");
 
-            String b1= String.valueOf(b);
-        //当前数据库单词总数，随机单词位置，随机单词，翻译，
-            String shuju=allid(ab)+","+b1+","+getname(ab,b)+","+ getfanyi(ab,b);
-            resp.getWriter().write(shuju);
-//            System.out.println(888888);
-            //功能，.1.修改翻译，
-            //主要功能，指定数据库页添加收藏单词，id，name，fanyi。
-            //进行指定数据库单词，
+            String a1="english."+cc[3];
+
+            int a2= Integer.parseInt(cc[0]);
+         String aa=tianjia(a1,a2,cc[1],cc[2]);
+            System.out.println(aa);
+            resp.getWriter().write(aa);
         }
     }
 

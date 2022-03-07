@@ -5,6 +5,7 @@
     <file type="web" url="file://$PROJECT_DIR$/servlet/001" />
     <file type="web" url="file://$PROJECT_DIR$/servlet/st002rumen" />
     <file type="web" url="file://$PROJECT_DIR$/spring" />
+    <file type="web" url="file://$PROJECT_DIR$/springboot/springboot001" />
     <file type="web" url="file://$PROJECT_DIR$/ssm/ssm01" />
     <file type="web" url="file://$PROJECT_DIR$/ssm01" />
     <file type="web" url="file://$PROJECT_DIR$/ziji/lianxi/jdbc/jdbc002" />
@@ -37,6 +38,7 @@
         <option value="$PROJECT_DIR$/ziji/lianxi/jdbc/jdbc002/pom.xml" />
         <option value="$PROJECT_DIR$/ziji/lianxi/jdbc/jdbc003/pom.xml" />
         <option value="$PROJECT_DIR$/spring/spring004-mybatis/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot/springboot001/pom.xml" />
       </list>
     </option>
   </component>
