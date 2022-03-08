@@ -1,0 +1,19 @@
+#server:
+#  port: 8081
+#spring:
+#  profiles: dev
+#---
+#server:
+#  port: 8082
+#spring:
+#  profiles: pro
+#---
+#server:
+#  port: 8083
+#spring:
+#  profiles: test
+#---
+#spring:
+#  profiles:
+#    active: dev
+##  此时dev的8081就生效了

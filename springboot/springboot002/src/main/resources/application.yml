@@ -1,0 +1,11 @@
+#yml的格式设置端口号为80
+server:
+  port: 80
+name01: 名字一
+name02: 名字二
+address:
+  - beijing
+  - shanghai
+panpan:
+  name: 张三
+  age: 23

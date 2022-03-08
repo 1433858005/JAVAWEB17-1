@@ -18,6 +18,7 @@ import java.util.Random;
 import static com.example.dao.dao01.*;
 
 @WebServlet("/b")
+//收藏功能
 public class b extends HttpServlet {
     @SneakyThrows
     @Override

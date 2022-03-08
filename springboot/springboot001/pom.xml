@@ -9,7 +9,12 @@
     <version>1.0-SNAPSHOT</version>
     <name>springboot001</name>
     <packaging>war</packaging>
-
+<!--   springboot工程需要继承的父工程-->
+      <parent>
+          <artifactId>spring-boot-starter-parent</artifactId>
+          <groupId>org.springframework.boot</groupId>
+          <version>2.5.6</version>
+      </parent>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.target>1.8</maven.compiler.target>
@@ -36,13 +41,40 @@
             <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
+<!--       web开发的起步依赖-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
-            <version>2.6.4</version>
-            <scope>compile</scope>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-
+<!--mybatisplus-->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter</artifactId>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-test</artifactId>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>3.5.1</version>
+            </dependency>
+            <dependency>
+                <groupId>com.h2database</groupId>
+                <artifactId>h2</artifactId>
+                <scope>runtime</scope>
+            </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-test</artifactId>
+            <version>2.5.6</version>
+        </dependency>
 
     </dependencies>
 
