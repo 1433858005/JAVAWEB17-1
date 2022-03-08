@@ -8,7 +8,7 @@ import static com.example.dao.dao01.allid;
 public class dancidaompl {
     public static void main(String[] args) throws SQLException, ClassNotFoundException {
            int aa=  allid("english.english0003");
-        System.out.println(aa);
+           System.out.println(aa);
     }
     public static int allid(String a) throws SQLException, ClassNotFoundException {
         Class.forName("com.mysql.cj.jdbc.Driver") ;

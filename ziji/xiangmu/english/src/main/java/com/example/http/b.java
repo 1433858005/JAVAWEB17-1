@@ -28,11 +28,12 @@ public class b extends HttpServlet {
         String shoucang=req.getParameter("shoucang");
         if (!Objects.equals(shoucang, "")) {
             String[] cc =shoucang.split(",");
-
             String a1="english."+cc[3];
+//            int a2= Integer.parseInt(cc[0]);
+            int a2= allid(a1)+1 ;
 
-            int a2= Integer.parseInt(cc[0]);
          String aa=tianjia(a1,a2,cc[1],cc[2]);
+
             System.out.println(aa);
             resp.getWriter().write(aa);
         }
