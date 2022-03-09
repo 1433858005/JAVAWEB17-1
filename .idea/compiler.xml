@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="json01" />
+        <module name="springboot001-1" />
         <module name="ssm01" />
         <module name="spring004-mybatis" />
         <module name="spring010" />
@@ -49,6 +50,7 @@
       <module name="spring01" target="1.8" />
       <module name="spring010" target="1.8" />
       <module name="springboot001" target="1.8" />
+      <module name="springboot001-1" target="17" />
       <module name="springboot002" target="17" />
       <module name="springboot003" target="17" />
       <module name="springboot004" target="17" />
@@ -59,6 +61,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="springboot001" options="-parameters" />
+      <module name="springboot001-1" options="-parameters" />
       <module name="springboot002" options="-parameters" />
       <module name="springboot003" options="-parameters" />
       <module name="springboot004" options="-parameters" />

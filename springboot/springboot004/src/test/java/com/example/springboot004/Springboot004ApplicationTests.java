@@ -6,10 +6,13 @@ import java.util.List;
 @SpringBootTest
 class Springboot004ApplicationTests {
     @Autowired
-    private EnglishMapper englishMapper;
+//    private EnglishMapper englishMapper;
+    private UserMapper userMapper;
+
     @Test
     void contextLoads() {
-        List<english> list=englishMapper.findAll();
+//      List<english> list=englishMapper.findAll();
+        List<User> list=userMapper.findAll();
         System.out.println(list);
     }
 }
