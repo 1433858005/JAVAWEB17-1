@@ -14,12 +14,12 @@ public class b {
 
            @Override
            public void show1() {
-               System.out.println(001);
+               System.out.println(1);
            }
 
            @Override
            public void show2() {
-               System.out.println(002);
+               System.out.println(2);
            }
        };
      q.show1();

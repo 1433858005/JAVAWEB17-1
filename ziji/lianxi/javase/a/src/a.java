@@ -1,17 +1,22 @@
-import java.util.ArrayList;
+class student2 {
+    String name;
+    int age;
+    static String school;
+    public void show() {
+        System.out.println(name + age + school);
+    }
+}
 
 public class a {
     public static void main(String[] args) {
-        ArrayList<String> a=new ArrayList<>();
-        a.add("zhangsan");
-        a.add("lisi");
-        a.add("wangwu");
-        a.add(0,"zhaoliu");
-        a.set(1,a.get(3));
-        System.out.println(a.remove(a.get(2)));
-        for (int i = 0; i < a.size(); i++) {
-            System.out.println(a.get(i));
-        }
-
+        student2 aa = new student2();
+        aa.name = "张三";
+        aa.age = 23;
+        aa.school = "清华";
+        aa.show();
+        student2 bb = new student2();
+        bb.show();
+        //输出为张三23清华
+        //  null0清华
     }
 }
