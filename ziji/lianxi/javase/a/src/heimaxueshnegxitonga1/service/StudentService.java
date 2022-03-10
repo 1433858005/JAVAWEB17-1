@@ -53,6 +53,15 @@ public class StudentService {
             return null;
         }
     }
+
+    public void deleteStudentById(String delId) {
+        studentDao.deleteStudentById(delId);
+    }
+
+    public void updateStudent(String updateId, Student student) {
+        studentDao.updateStudent(updateId,student);
+
+    }
 }
 
 

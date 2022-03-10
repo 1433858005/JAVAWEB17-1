@@ -36,4 +36,26 @@ public class StudentDao {
     public Student[] findAllStudent() {
         return stus;
     }
+
+    public void deleteStudentById(String delId) {
+        int index = getIndex(delId);
+        stus[index]=null;
+    }
+    public int getIndex(String id){
+        int index=-1;
+        for (int i = 0; i < stus.length; i++) {
+            Student stu=stus[i];
+            if (stu!=null&&stu.getId().equals(id)){
+                index=i;
+                break;
+            }
+        }
+        return index;
+    }
+
+    public void updateStudent(String updateId, Student student) {
+        int index=getIndex(updateId);
+        stus[index]=student;
+
+    }
 }
