@@ -29,7 +29,6 @@ public class servicehttp extends HttpServlet {
             String ab="english."+cc[1];
             System.out.println(ab);
             int b=new Random().nextInt(allid(ab))+1;//随机单词的id
-
             String b1= String.valueOf(b);
         //当前数据库单词总数，随机单词位置，随机单词，翻译，
             String shuju=allid(ab)+","+b1+","+getname(ab,b)+","+ getfanyi(ab,b);

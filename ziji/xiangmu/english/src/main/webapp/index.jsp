@@ -142,24 +142,11 @@
     document.getElementById("button").onclick = xiayige;
     document.getElementById("button3").onclick = shangyige;
     document.getElementById("button4").onclick = shoucang;
-    // document.getElementById("button5").onclick = danciku;
-
-
     document.getElementById("ku0").onclick = ku0;
-
     document.getElementById("sku0").onclick = sku0;
-
-
-    function ku0() {
-        //设置当前单词库
-
-    }
-
-
     function danciku() {
         let a = document.getElementById("div1");
         let b = document.createElement("a");
-
     }
 
     function up2() {
@@ -295,6 +282,7 @@
             bb1.removeChild(document.getElementById("ku1"));
             bb1.removeChild(document.getElementById("ku2"));
             bb1.removeChild(document.getElementById("ku3"));
+            bb1.removeChild(document.getElementById("ku4"));
         }
 
         if (document.getElementById("sku1")) {
@@ -338,7 +326,7 @@
 
         }
     }
-
+   //词库设置
     function aaa1() {
         let bb1 = document.querySelector(".div1");
         bb1.style.display = "block"
@@ -353,25 +341,29 @@
             let bb2 = document.createElement("a");
             let bb3 = document.createElement("a");
             let bb4 = document.createElement("a");
+            let bb5 = document.createElement("a");
             bb2.id = "ku1"
             bb3.id = "ku2"
             bb4.id = "ku3"
+            bb5.id = "ku4"
             bb2.innerHTML = "english0001<br>"
             bb3.innerHTML = "english0002<br>"
-            bb4.innerHTML = "english0003"
+            bb4.innerHTML = "english0003<br>"
+            bb5.innerHTML = "c1s<br>"
             bb1.appendChild(bb2)
             bb1.appendChild(bb3)
             bb1.appendChild(bb4)
+            bb1.appendChild(bb5)
         }
         document.getElementById("ku1").onclick = ku1;
         document.getElementById("ku2").onclick = ku2;
         document.getElementById("ku3").onclick = ku3;
+        document.getElementById("ku4").onclick = ku4;
 
         function ku1() {
             document.getElementById("ku0").innerHTML = "english0001";
             let bb1 = document.querySelector(".div1");
             bb1.style.display = "none"
-
         }
 
         function ku2() {
@@ -382,6 +374,11 @@
 
         function ku3() {
             document.getElementById("ku0").innerHTML = "english0003";
+            let bb1 = document.querySelector(".div1");
+            bb1.style.display = "none"
+        }
+        function ku4() {
+            document.getElementById("ku0").innerHTML = "c1s";
             let bb1 = document.querySelector(".div1");
             bb1.style.display = "none"
         }
