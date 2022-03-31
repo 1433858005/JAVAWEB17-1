@@ -82,12 +82,12 @@ public class StudentDaoImpl implements StudentDao{
         int result=0;
         Connection con = JDBCUtils.getConnection();
         Statement stat = con.createStatement();
-        String sql = "UPDATE student.student SET sid='"+stu.getId()+"',name='"+stu.getName()+"',age='"+stu.getAge()+"',birthday='"+null+"' WHERE sid='"+stu.getId()+"'";
+        String sql = "UPDATE student.student SET id='"+stu.getId()+"',name='"+stu.getName()+"',gender='"+stu.getGender()+"',age='"+stu.getAge()+"',studentid='"+stu.getStudentid()+"',phone='"+stu.getPhone()+"',email='"+stu.getEmail()+"',identitycard='"+stu.getIdentitycard()+"' WHERE id='"+stu.getId()+"'";
         result=stat.executeUpdate(sql);
         JDBCUtils.close(con,stat);
         return result;
     }
-
+//删除学生
     @Override
     public int delete(Integer id) throws SQLException {
         int result=0;
@@ -98,4 +98,5 @@ public class StudentDaoImpl implements StudentDao{
         JDBCUtils.close(con,stat);
         return result;
     }
+
 }

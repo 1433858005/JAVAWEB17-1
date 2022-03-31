@@ -83,7 +83,7 @@ public class StudentDaoImpl implements StudentDao {
         int result=0;
         Connection con = JDBCUtils.getConnection();
         Statement stat = con.createStatement();
-        String sql = "DELETE FROM student WHERE sid='"+id+"'";
+        String sql = "DELETE FROM student.student WHERE sid='"+id+"'";
         result=stat.executeUpdate(sql);
         JDBCUtils.close(con,stat);
         return result;

@@ -32,7 +32,7 @@ public class StudentController extends HttpServlet {
     //添加学生
     @Test
     public void insert() throws SQLException {
-        Student stu=new Student(2,"几点上课了","男",56,25,456,"1111","456");
+        Student stu=new Student(4,"几点上课了","男",56,25,456,"1111","456");
         int result= service.insert(stu);
         if (result!=0){
             System.out.println("添加成功了");
@@ -43,8 +43,9 @@ public class StudentController extends HttpServlet {
     //根据id修改学生信息
     @Test
     public void update() throws SQLException {
-        Student stu = service.findByid(5);
+        Student stu = service.findByid(1);
         stu.setName("周七七");
+        stu.setGender("女");
         service.update(stu);
         int result=service.update(stu);
         if (result!=0){
@@ -53,4 +54,16 @@ public class StudentController extends HttpServlet {
             System.out.println("修改失败");
         }
     }
+    @Test
+    public void delete() throws SQLException {
+        int result = service.delete(1);
+        if (result!=0){
+            System.out.println("删除成功");
+        }else {
+            System.out.println("删除失败");
+        }
+    }
+
+
+
 }
