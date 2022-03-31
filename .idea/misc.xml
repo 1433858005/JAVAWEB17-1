@@ -14,6 +14,9 @@
     <file type="web" url="file://$PROJECT_DIR$/ziji/lianxi/jdbc/jdbcceshi001" />
     <file type="web" url="file://$PROJECT_DIR$/ziji/xiangmu/english" />
   </component>
+  <component name="JavaScriptSettings">
+    <option name="languageLevel" value="FLOW" />
+  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
