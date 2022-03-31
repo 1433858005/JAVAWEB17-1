@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="gfstudent:war">
+    <output-path>$PROJECT_DIR$/ziji/gf/gfstudent/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>gfstudent</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="gfstudent-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="gfstudent:war exploded" />
+    </root>
+  </artifact>
+</component>

@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="json01" />
         <module name="springboot001-1" />
+        <module name="gfstudent" />
         <module name="ssm01" />
         <module name="spring004-mybatis" />
         <module name="spring010" />
@@ -33,6 +34,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="english" target="1.8" />
+      <module name="gfstudent" target="1.8" />
       <module name="jdbc002" target="1.8" />
       <module name="jdbc003" target="9" />
       <module name="jdbcceshi001" target="1.8" />
