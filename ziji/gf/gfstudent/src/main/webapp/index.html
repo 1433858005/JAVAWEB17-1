@@ -12,22 +12,57 @@
 <input type="file" id="aa">
 <button id="q"></button>
 </body>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 <script>
     let qq = document.getElementById("q");
-    qq.onclick=aaa;
+    qq.onclick = aaa;
+    let qw
+
     function aaa() {
-        let a = document.getElementById("aa");
-        let xmlHttp = new XMLHttpRequest();
-        xmlHttp.open("GET", "b?add=" + a, true);
-        xmlHttp.send();
-        xmlHttp.onreadystatechange = function () {
-            if (xmlHttp.readyState === 4 && xmlHttp.status === 200) {
-                let b = xmlHttp.responseText
-                document.getElementById("a1").innerText = b;
-                aa()
+        let a = document.getElementById("aa").files[0];
+        var file = a;
+        var reader = new FileReader();
+        reader.readAsDataURL(file);
+        console.log();
+        reader.onload = function (e) {
+            qw = this.result;
+            alert(qw)
+            let xmlHttp = new XMLHttpRequest();
+            xmlHttp.open("post", "b", true);
+            xmlHttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+            // xmlHttp.send("add="+this.result);
+            xmlHttp.send("add=23");
+            xmlHttp.onreadystatechange = function () {
+                // if (xmlHttp.readyState === 4 && xmlHttp.status === 200) {
+                //     // let b = xmlHttp.responseText
+                //     // document.getElementById("a1").innerText = b;
+                //     // aa()
+                // }
             }
+            // $.ajax({
+            //     type: "post",
+            //     url: "a",
+            //     dateType: "json",
+            //     contentType: 'application/json',
+            //     data:"aa="+qw,
+            //     // success: function (result) {
+            //     //     app.userList = result.data.rows;
+            //     //     app.pagination.total = result.data.total;
+            //     // },
+            //     // error: function (result) {}
+            // });
         }
     }
+
+
+
+    // function aaa() {
+    //     // let a = document.getElementById("aa").files[0];
+    //     // alert(a)
+    //     readFile()
+    //     alert(qw)
+
+    // }
 </script>
 
 </html>
