@@ -112,7 +112,6 @@ public class StudentController extends HttpServlet {
         con.close();
         resp.setContentType("text/html;charset=UTF-8");//设置输出的数据格式，给前端发送数据
         resp.getWriter().write("添加成功");
-
     }
 
     private StudentService service=new StudentServiceImpl();
@@ -168,7 +167,4 @@ public class StudentController extends HttpServlet {
             System.out.println("删除失败");
         }
     }
-
-
-
 }

@@ -5,12 +5,14 @@
       <module fileurl="file://$PROJECT_DIR$/JAVAWEB17.iml" filepath="$PROJECT_DIR$/JAVAWEB17.iml" />
       <module fileurl="file://$PROJECT_DIR$/ziji/lianxi/javase/a/a.iml" filepath="$PROJECT_DIR$/ziji/lianxi/javase/a/a.iml" />
       <module fileurl="file://$PROJECT_DIR$/ziji/xiangmu/english/english.iml" filepath="$PROJECT_DIR$/ziji/xiangmu/english/english.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ziji/xiangmu/english2/english2.iml" filepath="$PROJECT_DIR$/ziji/xiangmu/english2/english2.iml" />
       <module fileurl="file://$PROJECT_DIR$/ziji/gf/gfstudent/gfstudent.iml" filepath="$PROJECT_DIR$/ziji/gf/gfstudent/gfstudent.iml" />
       <module fileurl="file://$PROJECT_DIR$/ziji/lianxi/javase/io/io.iml" filepath="$PROJECT_DIR$/ziji/lianxi/javase/io/io.iml" />
       <module fileurl="file://$PROJECT_DIR$/ziji/lianxi/jdbc/jdbc002/jdbc002.iml" filepath="$PROJECT_DIR$/ziji/lianxi/jdbc/jdbc002/jdbc002.iml" />
       <module fileurl="file://$PROJECT_DIR$/ziji/lianxi/jdbc/jdbc003/jdbc003.iml" filepath="$PROJECT_DIR$/ziji/lianxi/jdbc/jdbc003/jdbc003.iml" />
       <module fileurl="file://$PROJECT_DIR$/ziji/lianxi/jdbc/jdbcceshi001/jdbcceshi001.iml" filepath="$PROJECT_DIR$/ziji/lianxi/jdbc/jdbcceshi001/jdbcceshi001.iml" />
       <module fileurl="file://$PROJECT_DIR$/ajax/json/json01.iml" filepath="$PROJECT_DIR$/ajax/json/json01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springmvc/mvc001/mvc001.iml" filepath="$PROJECT_DIR$/springmvc/mvc001/mvc001.iml" />
       <module fileurl="file://$PROJECT_DIR$/servlet/001/servlet001.iml" filepath="$PROJECT_DIR$/servlet/001/servlet001.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring/spring001/spring001.iml" filepath="$PROJECT_DIR$/spring/spring001/spring001.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring/spring002/spring002.iml" filepath="$PROJECT_DIR$/spring/spring002/spring002.iml" />

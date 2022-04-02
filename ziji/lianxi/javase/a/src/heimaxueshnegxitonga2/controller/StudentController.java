@@ -1,12 +1,12 @@
 package heimaxueshnegxitonga2.controller;
 
-import heimaxueshnegxitonga1.domain.Student;
-import heimaxueshnegxitonga1.service.StudentService;
+import heimaxueshnegxitonga2.domain.Student;
+import heimaxueshnegxitonga2.service.StudentService;
 
 import java.util.Scanner;
 
 public class StudentController {
-  private   StudentService studentService = new StudentService();
+  private StudentService studentService = new StudentService();
   private   Scanner sc = new Scanner(System.in);
     //开启学生管理系统，并展示学生管理系统菜单
     public void start() {

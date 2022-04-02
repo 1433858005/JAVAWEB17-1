@@ -33,6 +33,8 @@
     <file url="file://$PROJECT_DIR$/springboot/springboot002/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot/springboot003/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot/springboot004/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springmvc/mvc001/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springmvc/mvc001/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ssm/ssm01/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ssm/ssm01/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ziji/gf/gfstudent/src/main/java" charset="UTF-8" />
@@ -45,5 +47,7 @@
     <file url="file://$PROJECT_DIR$/ziji/lianxi/jdbc/jdbcceshi001/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ziji/xiangmu/english/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ziji/xiangmu/english/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ziji/xiangmu/english2/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ziji/xiangmu/english2/src/main/resources" charset="UTF-8" />
   </component>
 </project>

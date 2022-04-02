@@ -16,16 +16,18 @@
         <module name="st002rumen" />
         <module name="jdbcceshi001" />
         <module name="jdbc003" />
+        <module name="english" />
+        <module name="jdbc002" />
+        <module name="english2" />
         <module name="spring003" />
         <module name="spring001" />
         <module name="spring002" />
         <module name="spring007" />
-        <module name="english" />
         <module name="springboot001" />
         <module name="springboot002" />
         <module name="spring005" />
         <module name="spring006" />
-        <module name="jdbc002" />
+        <module name="mvc001" />
         <module name="spring009" />
         <module name="springboot003" />
         <module name="servlet001" />
@@ -34,11 +36,13 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="english" target="1.8" />
+      <module name="english2" target="1.8" />
       <module name="gfstudent" target="1.8" />
       <module name="jdbc002" target="1.8" />
       <module name="jdbc003" target="9" />
       <module name="jdbcceshi001" target="1.8" />
       <module name="json01" target="1.8" />
+      <module name="mvc001" target="1.8" />
       <module name="servlet001" target="1.8" />
       <module name="spring001" target="1.8" />
       <module name="spring002" target="1.8" />

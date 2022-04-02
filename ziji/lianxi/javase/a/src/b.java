@@ -10,6 +10,7 @@ public class b {
                System.out.println(66666);
            }
        }.show();
+
      aa2 q=  new aa2(){
 
            @Override

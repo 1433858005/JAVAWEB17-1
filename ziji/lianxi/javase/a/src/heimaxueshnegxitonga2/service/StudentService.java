@@ -1,13 +1,10 @@
 package heimaxueshnegxitonga2.service;
-
-import heimaxueshnegxitonga1.dao.StudentDao;
-import heimaxueshnegxitonga1.domain.Student;
-
+import heimaxueshnegxitonga2.dao.StudentDao;
+import heimaxueshnegxitonga2.domain.Student;
 import java.util.Objects;
-
 public class StudentService {
     //创建StudentDao(库管)
-  private   StudentDao studentDao =new StudentDao();
+  private StudentDao studentDao =new StudentDao();
     public boolean addStudent(Student stu) {
          //创建StudentDao(库管)
 //        StudentDao studentDao=new StudentDao();
@@ -34,6 +31,29 @@ public class StudentService {
         }
 
         return exists;//传Boolean类型判断id是否占用
+    }
+    public Student[] findAllStudent() {
+        Student[] allStudent =studentDao.findAllStudent();
+        boolean flag =false;
+        for (int i = 0; i < allStudent.length; i++) {
+            Student stu=allStudent[i];
+            if (stu!=null){
+                flag =true;
+                break;
+            }
+        }
+        if (flag){
+            return  allStudent;
+        }else {
+            return null;
+        }
+    }
+    public void deleteStudentById(String delId) {
+        studentDao.deleteStudentById(delId);
+    }
+
+    public void updateStudent(String updateId, Student student) {
+        studentDao.updateStudent(updateId,student);
     }
 }
 

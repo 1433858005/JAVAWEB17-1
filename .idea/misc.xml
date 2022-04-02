@@ -6,6 +6,7 @@
     <file type="web" url="file://$PROJECT_DIR$/servlet/st002rumen" />
     <file type="web" url="file://$PROJECT_DIR$/spring" />
     <file type="web" url="file://$PROJECT_DIR$/springboot/springboot001" />
+    <file type="web" url="file://$PROJECT_DIR$/springmvc/mvc001" />
     <file type="web" url="file://$PROJECT_DIR$/ssm/ssm01" />
     <file type="web" url="file://$PROJECT_DIR$/ssm01" />
     <file type="web" url="file://$PROJECT_DIR$/ziji/gf/gfstudent" />
@@ -13,6 +14,7 @@
     <file type="web" url="file://$PROJECT_DIR$/ziji/lianxi/jdbc/jdbc003" />
     <file type="web" url="file://$PROJECT_DIR$/ziji/lianxi/jdbc/jdbcceshi001" />
     <file type="web" url="file://$PROJECT_DIR$/ziji/xiangmu/english" />
+    <file type="web" url="file://$PROJECT_DIR$/ziji/xiangmu/english2" />
   </component>
   <component name="JavaScriptSettings">
     <option name="languageLevel" value="FLOW" />
@@ -48,6 +50,8 @@
         <option value="$PROJECT_DIR$/springboot/springboot004/pom.xml" />
         <option value="$PROJECT_DIR$/springboot/springboot001-1/pom.xml" />
         <option value="$PROJECT_DIR$/ziji/gf/gfstudent/pom.xml" />
+        <option value="$PROJECT_DIR$/springmvc/mvc001/pom.xml" />
+        <option value="$PROJECT_DIR$/ziji/xiangmu/english2/pom.xml" />
       </list>
     </option>
   </component>
