@@ -14,12 +14,15 @@
         <module name="spring004-mybatis" />
         <module name="spring010" />
         <module name="st002rumen" />
+        <module name="sss" />
         <module name="jdbcceshi001" />
         <module name="jdbc003" />
+        <module name="springmvc0001" />
         <module name="english" />
         <module name="jdbc002" />
         <module name="english2" />
         <module name="spring003" />
+        <module name="mvc002" />
         <module name="spring001" />
         <module name="spring002" />
         <module name="spring007" />
@@ -43,6 +46,7 @@
       <module name="jdbcceshi001" target="1.8" />
       <module name="json01" target="1.8" />
       <module name="mvc001" target="1.8" />
+      <module name="mvc002" target="1.8" />
       <module name="servlet001" target="1.8" />
       <module name="spring001" target="1.8" />
       <module name="spring002" target="1.8" />
@@ -60,7 +64,9 @@
       <module name="springboot002" target="17" />
       <module name="springboot003" target="17" />
       <module name="springboot004" target="17" />
+      <module name="springmvc0001" target="17" />
       <module name="ssm01" target="1.8" />
+      <module name="sss" target="17" />
       <module name="st002rumen" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -71,6 +77,7 @@
       <module name="springboot002" options="-parameters" />
       <module name="springboot003" options="-parameters" />
       <module name="springboot004" options="-parameters" />
+      <module name="springmvc0001" options="-parameters" />
     </option>
   </component>
 </project>

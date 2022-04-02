@@ -13,6 +13,7 @@
       <module fileurl="file://$PROJECT_DIR$/ziji/lianxi/jdbc/jdbcceshi001/jdbcceshi001.iml" filepath="$PROJECT_DIR$/ziji/lianxi/jdbc/jdbcceshi001/jdbcceshi001.iml" />
       <module fileurl="file://$PROJECT_DIR$/ajax/json/json01.iml" filepath="$PROJECT_DIR$/ajax/json/json01.iml" />
       <module fileurl="file://$PROJECT_DIR$/springmvc/mvc001/mvc001.iml" filepath="$PROJECT_DIR$/springmvc/mvc001/mvc001.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springmvc/mvc002/mvc002.iml" filepath="$PROJECT_DIR$/springmvc/mvc002/mvc002.iml" />
       <module fileurl="file://$PROJECT_DIR$/servlet/001/servlet001.iml" filepath="$PROJECT_DIR$/servlet/001/servlet001.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring/spring001/spring001.iml" filepath="$PROJECT_DIR$/spring/spring001/spring001.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring/spring002/spring002.iml" filepath="$PROJECT_DIR$/spring/spring002/spring002.iml" />
@@ -28,7 +29,9 @@
       <module fileurl="file://$PROJECT_DIR$/springboot/springboot002/springboot002.iml" filepath="$PROJECT_DIR$/springboot/springboot002/springboot002.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot/springboot003/springboot003.iml" filepath="$PROJECT_DIR$/springboot/springboot003/springboot003.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot/springboot004/springboot004.iml" filepath="$PROJECT_DIR$/springboot/springboot004/springboot004.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springmvc/springmvc0001/springmvc0001.iml" filepath="$PROJECT_DIR$/springmvc/springmvc0001/springmvc0001.iml" />
       <module fileurl="file://$PROJECT_DIR$/ssm/ssm01/ssm01.iml" filepath="$PROJECT_DIR$/ssm/ssm01/ssm01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ssm/sss/sss.iml" filepath="$PROJECT_DIR$/ssm/sss/sss.iml" />
       <module fileurl="file://$PROJECT_DIR$/servlet/st002rumen/st002rumen.iml" filepath="$PROJECT_DIR$/servlet/st002rumen/st002rumen.iml" />
     </modules>
   </component>

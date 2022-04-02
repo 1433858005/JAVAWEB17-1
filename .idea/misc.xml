@@ -7,7 +7,9 @@
     <file type="web" url="file://$PROJECT_DIR$/spring" />
     <file type="web" url="file://$PROJECT_DIR$/springboot/springboot001" />
     <file type="web" url="file://$PROJECT_DIR$/springmvc/mvc001" />
+    <file type="web" url="file://$PROJECT_DIR$/springmvc/mvc002" />
     <file type="web" url="file://$PROJECT_DIR$/ssm/ssm01" />
+    <file type="web" url="file://$PROJECT_DIR$/ssm/sss" />
     <file type="web" url="file://$PROJECT_DIR$/ssm01" />
     <file type="web" url="file://$PROJECT_DIR$/ziji/gf/gfstudent" />
     <file type="web" url="file://$PROJECT_DIR$/ziji/lianxi/jdbc/jdbc002" />
@@ -52,6 +54,9 @@
         <option value="$PROJECT_DIR$/ziji/gf/gfstudent/pom.xml" />
         <option value="$PROJECT_DIR$/springmvc/mvc001/pom.xml" />
         <option value="$PROJECT_DIR$/ziji/xiangmu/english2/pom.xml" />
+        <option value="$PROJECT_DIR$/springmvc/springmvc0001/pom.xml" />
+        <option value="$PROJECT_DIR$/springmvc/mvc002/pom.xml" />
+        <option value="$PROJECT_DIR$/ssm/sss/pom.xml" />
       </list>
     </option>
   </component>

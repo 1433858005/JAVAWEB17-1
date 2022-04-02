@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="english2:war">
+    <output-path>$PROJECT_DIR$/ziji/xiangmu/english2/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>english2</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="english2-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="english2:war exploded" />
+    </root>
+  </artifact>
+</component>
