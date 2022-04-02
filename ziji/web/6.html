@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<script> 
+    window.onload = function(){ 
+        var input = document.getElementById("demo_input"); //file
+        var result= document.getElementById("result");   //文本框
+        input.addEventListener('change',readFile,false);
+    }
+    function readFile(){
+        var file = this.files[0]; 
+        var reader = new FileReader(); 
+        reader.readAsDataURL(file); 
+        console.log();
+        reader.onload = function(e){ 
+                result.innerHTML = this.result;  
+        }
+    } 
+</script> 
+</head>
+
+<body> 
+    <input type="file" value="sdgsdg" id="demo_input" /> 
+    <textarea name="img1" id="result" rows=30 cols=600></textarea> 
+</form>
+</body> 
+</html>

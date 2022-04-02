@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #add {
+            display: none
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        {{ s }}
+        {{ name }}
+        {{ adds }}
+        <div> <button @click="add">添加学生信息</button>
+            <button @click="update">修改学生信息</button>
+            <button @click="deletes">删除学生信息</button>
+        </div>
+        <div id="add">
+            姓名 <input type="text" v-model.trim="name">
+            性别<input type="radio" v-model.trim="gender" name="a" value="男">男
+            <input type="radio" v-model.trim="gender" name="a" value="女">女
+            年龄<input type="text" v-model.trim="age">
+            学生id<input type="text" v-model.trim="studentid">
+            手机号<input type="text" v-model.trim="phone">
+            邮箱<input type="text" v-model.trim="email ">
+            身份证号<input type="text" v-model.trim="identitycard">
+            <div>
+                <button @click="add2">确定</button>
+                <!-- <div v-if="Math.random()>0.5">随机数大于0.5</div> -->
+                {{ adds }}
+                <a href="" id="a1">12</a>
+            </div>
+        </div>
+        <div>
+
+        </div>
+        <table class="table table-bordered table-hover table-striped">
+            <thead>
+                <th>Id</th>
+                <th>姓名</th>
+                <th>性别</th>
+                <th>年龄</th>
+                <th>学生id</th>
+                <th>手机号</th>
+                <th>邮箱</th>
+                <th>身份证号</th>
+            </thead>
+            <tbody>
+                <tr v-for="(item) in list" :key="item.id">
+                    <td>{{ item.id }}</td>
+                    <td>{{ item.name }}</td>
+                    <td>{{ item.gender }}</td>
+                    <td>{{ item.age }}</td>
+                    <td>{{ item.studentid }}</td>
+                    <td>{{ item.phone }}</td>
+                    <td>{{ item.email }}</td>
+                    <td>{{ item.identitycard }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script>
+    let aaa = "学生管理系统"
+    let arr1 = [];
+    aa();
+
+    function aa() {
+        let xmlHttp = new XMLHttpRequest();
+        xmlHttp.open("GET", "a?username=1", true);
+        xmlHttp.send();
+        xmlHttp.onreadystatechange = function () {
+            if (xmlHttp.readyState === 4 && xmlHttp.status === 200) {
+                let b = JSON.parse(xmlHttp.responseText)
+                for (let i in b) {
+                    arr1.push(b[i]);
+                }
+            }
+        }
+    }
+
+
+
+
+
+
+    const vm = new Vue({
+        el: '#app',
+        data: {
+            adds: '',
+            s: aaa,
+            list: arr1,
+            name: '',
+            gender: '',
+            age: '',
+            studentid: '',
+            phone: '',
+            email: '',
+            identitycard: '',
+        },
+        methods: {
+            add() {
+                let bb1 = document.querySelector("#add");
+                bb1.style.display = "block"
+            },
+            add2() {
+                
+                let a = this.name + "," + this.gender + "," + this.age + "," + this.studentid + "," + this
+                    .phone + "," + this.email + "," + this.identitycard
+
+                let xmlHttp = new XMLHttpRequest();
+                xmlHttp.open("GET", "a?add=" + a, true);
+                xmlHttp.send();
+                xmlHttp.onreadystatechange = function () {
+                    if (xmlHttp.readyState === 4 && xmlHttp.status === 200) {
+                        let b = xmlHttp.responseText
+                        document.getElementById("a1").innerText=b;
+                        aa()
+                    }
+                }
+
+            },
+            update() {
+
+            },
+            deletes() {
+
+            }
+
+        }
+    })
+</script>
+
+</html>

@@ -1,0 +1,27 @@
+<body>
+    <div id="app">
+        <p v-if="flag">这是被 v-if 控制的元素</p>
+        <p v-show="flag">这是被 v-show 控制的元素</p>
+        <hr>
+        <span>{{aa}}</span>
+        <div v-if="aa>0.5">随机数大于0.5</div>
+        <div v-else>随机数小于0.5</div>
+        <hr>
+        <div v-if="type === 'A'">优秀</div>
+        <div v-else-if="type === 'B'">良好</div>
+        <div v-else-if="type === 'C'">一般</div>
+        <div v-else>差</div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script>
+        const vm = new Vue({
+            el: '#app',
+            data: {
+                // 如果 flag 为 true，则显示被控制的元素；如果为 false 则隐藏被控制的元素
+                flag: false,
+                type: 'A',
+                aa: Math.random()
+            }
+        })
+    </script>
+</body>
