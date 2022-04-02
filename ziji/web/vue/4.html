@@ -26,42 +26,20 @@
         reader.onload = function (e) {
             qw = this.result;
             alert(qw)
-            // let xmlHttp = new XMLHttpRequest();
-            // xmlHttp.open("post", "b", true);
-            // xmlHttp.setRequestHeader("Content-type","application/json");
-            // xmlHttp.send("add="+this.result);
-            // xmlHttp.onreadystatechange = function () {
-            //     if (xmlHttp.readyState === 4 && xmlHttp.status === 200) {
-            //         // let b = xmlHttp.responseText
-            //         // document.getElementById("a1").innerText = b;
-            //         // aa()
-            //     }
-            // }
-            $.ajax({
-                type: "post",
-                url: "a",
-                dateType: "json",
-                contentType: 'application/json',
-                data: qw,
-
-                // success: function (result) {
-                //     app.userList = result.data.rows;
-                //     app.pagination.total = result.data.total;
-                // },
-                // error: function (result) {}
-            });
+            let xmlHttp = new XMLHttpRequest();
+            xmlHttp.open("post", "b", true);
+            xmlHttp.setRequestHeader("Content-type","application/json");
+            xmlHttp.send("add="+this.result);
+            xmlHttp.onreadystatechange = function () {
+                if (xmlHttp.readyState === 4 && xmlHttp.status === 200) {
+                    // let b = xmlHttp.responseText
+                    // document.getElementById("a1").innerText = b;
+                    // aa()
+                }
+            }
+    
         }
     }
-
-
-
-    // function aaa() {
-    //     // let a = document.getElementById("aa").files[0];
-    //     // alert(a)
-    //     readFile()
-    //     alert(qw)
-
-    // }
 </script>
 
 </html>

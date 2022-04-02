@@ -1,46 +1,72 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-<html xmlns="http://www.w3.org/1999/xhtml"> 
-<head> 
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
-<script> 
-    window.onload = function(){ 
-        var input = document.getElementById("demo_input"); //file
-        var result= document.getElementById("result");   //文本框
-        var img_area = document.getElementById("img_area");   //图片
+<html xmlns="http://www.w3.org/1999/xhtml">
 
-        if ( typeof(FileReader) === 'undefined' ){
-            result.innerHTML = "抱歉，你的浏览器不支持 FileReader，请使用现代浏览器操作！"; 
-            input.setAttribute('disabled','disabled'); 
-        }else{
-            input.addEventListener('change',readFile,false);
-        } 
-    }
-    function readFile(){
-        var file = this.files[0]; 
-        //这里我们判断下类型如果不是图片就返回 去掉就可以上传任意文件   
-        if(!/image\/\w+/.test(file.type)){
-            alert("请确保文件为图像类型"); 
-            return false; 
-        }
-        var reader = new FileReader(); 
-        reader.readAsDataURL(file); 
-        console.log();
-        reader.onload = function(e){ 
-                result.innerHTML = this.result; 
-                img_area.innerHTML = '<div class="sitetip">图片img标签展示：</div><img src="'+this.result+'" alt=""/>'; 
-        }
-    } 
-</script> 
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script>
+        // window.onload = function () {
+        //     var input = document.getElementById("demo_input"); //file
+        //     var result = document.getElementById("result"); //文本框
+        //     var img_area = document.getElementById("img_area"); //图片
+
+        //     if (typeof (FileReader) === 'undefined') {
+        //         result.innerHTML = "抱歉，你的浏览器不支持 FileReader，请使用现代浏览器操作！";
+        //         input.setAttribute('disabled', 'disabled');
+        //     } else {
+        //         input.addEventListener('change', readFile, false);
+        //     }
+        // }
+
+        // function readFile() {
+        //     var file = this.files[0];
+        //     //这里我们判断下类型如果不是图片就返回 去掉就可以上传任意文件   
+        //     if (!/image\/\w+/.test(file.type)) {
+        //         alert("请确保文件为图像类型");
+        //         return false;
+        //     }
+        //     var reader = new FileReader();
+        //     reader.readAsDataURL(file);
+        //     console.log();
+        //     reader.onload = function (e) {
+        //         result.innerHTML = this.result;
+        //         img_area.innerHTML = '<div class="sitetip">图片img标签展示：</div><img src="' + this.result + '" alt=""/>';
+        //     }
+        // }
+    </script>
 </head>
 
-<body> 
-    <form action="" method="post">
-    <input type="file" value="sdgsdg" id="demo_input" /> 
+<body>
+    <!-- <form action="" method="post">
+        <input type="file" value="sdgsdg" id="demo_input" />
 
-    <textarea name="img1" id="result" rows=30 cols=600></textarea> 
-    <p id="img_area"></p> 
-    <input type="submit" value="提交">
-</form>
-</body> 
+        <textarea name="img1" id="result" rows=30 cols=600></textarea>
+
+
+        <p id="img_area"></p>
+        <!-- <input type="submit" value="提交"> -->
+
+
+    </form> -->
+    <div>
+        <textarea id="txt" rows=30 cols=60>2131231</textarea>
+        <!-- <textarea > </textarea> -->
+    </div>
+
+    <div> 图片 <img src="C:\Users\14338\Desktop\1\111.jpg" alt="" id="img"></div>
+    <button id="aa">点击</button>
+</body>
+<Script>
+    function q() {
+        let a = document.getElementById("txt").value
+        alert(a)
+    
+        let b = document.getElementById("img")
+        b.setAttribute("src",a)
+    
+    }
+    document.getElementById("aa").onclick = q;
+</Script>
+
 </html>

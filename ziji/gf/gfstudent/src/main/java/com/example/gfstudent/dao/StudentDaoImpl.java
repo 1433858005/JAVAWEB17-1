@@ -29,7 +29,8 @@ public class StudentDaoImpl implements StudentDao{
             int phone = rs.getInt("phone");
             String email = rs.getString("email");
            String identitycard = rs.getString("identitycard");
-            Student stu = new Student(id,name,gender,age,studentid,phone,email,identitycard);
+           String img=rs.getString("img");
+            Student stu = new Student(id,name,gender,age,studentid,phone,email,identitycard,img);
             list.add(stu);
         }
         JDBCUtils.close(con,stat,rs);

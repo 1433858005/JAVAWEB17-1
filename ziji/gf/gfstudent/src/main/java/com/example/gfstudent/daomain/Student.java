@@ -9,6 +9,7 @@ public class Student {
     private  int phone;
     private  String email;
     private  String identitycard;
+    private String img;
 
     @Override
     public String toString() {
@@ -21,6 +22,7 @@ public class Student {
                 ", phone=" + phone +
                 ", email='" + email + '\'' +
                 ", identitycard='" + identitycard + '\'' +
+                ", img='" + img + '\'' +
                 '}';
     }
 
@@ -88,10 +90,18 @@ public class Student {
         this.identitycard = identitycard;
     }
 
+    public String getImg() {
+        return img;
+    }
+
+    public void setImg(String img) {
+        this.img = img;
+    }
+
     public Student() {
     }
 
-    public Student(int id, String name, String gender, int age, int studentid, int phone, String email, String identitycard) {
+    public Student(int id, String name, String gender, int age, int studentid, int phone, String email, String identitycard, String img) {
         this.id = id;
         this.name = name;
         this.gender = gender;
@@ -100,5 +110,6 @@ public class Student {
         this.phone = phone;
         this.email = email;
         this.identitycard = identitycard;
+        this.img = img;
     }
 }

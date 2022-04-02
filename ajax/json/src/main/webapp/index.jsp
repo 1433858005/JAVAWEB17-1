@@ -10,37 +10,42 @@
 </head>
 
 <body>
-
-<label for="username">姓名:</label><input type="text" id="username">
-<span id="uSpan"></span><br>
+<div> 图片 <img src="" alt="" id="img"></div>
+<input type="file" id="a">
+<button id="q"></button>
 
 </body>
-<Script>
-  //1.为绑定失去焦点事件
-  document.getElementById("username").onblur = function () {
-    //2.创建XMLHttpRequest核心对象
-    let xmlHttp = new XMLHttpRequest();
-    //3打开链接
-    let username = document.getElementById("username").value;
-    xmlHttp.open("post","a",true);
-    // POST发送请求必须设置请求头
-    xmlHttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
-    // application/x-www-form-urlencoded    表单字符类型
-    // multiline/form-data      表单类型
-    // application/json
-    // text/xml
+<script>
+  let qq = document.getElementById("q");
+  qq.onclick = aaa;
+  let qw
 
-    //4.发送请求
-    xmlHttp.send("username="+username);
-    //5处理响应
-    xmlHttp.onreadystatechange = function () {
-      //判断请求响应是否成功
-      if (xmlHttp.readyState === 4 && xmlHttp.status === 200) {
-        //将响应数据显示到标签
-        document.getElementById("uSpan").innerHTML = xmlHttp.responseText;
+  function aaa() {
+    let a = document.getElementById("a").files[0];
+    var file = a;
+    var reader = new FileReader();
+    reader.readAsDataURL(file);
+    console.log();
+    reader.onload = function (e) {
+      qw = this.result;
+      alert(qw)
+      let xmlHttp = new XMLHttpRequest();
+      xmlHttp.open("post", "aa", true);
+      xmlHttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+      // xmlHttp.setRequestHeader("Content-type","multiline/form-data");
+      // xmlHttp.send(this.result);
+      xmlHttp.send("add=111&as="+this.result);
+      xmlHttp.onreadystatechange = function () {
+        if (xmlHttp.readyState === 4 && xmlHttp.status === 200) {
+          let b = xmlHttp.responseText
+          alert(b)
+          let bb = document.getElementById("img")
+          bb.setAttribute("src",b)
+        }
+
       }
     }
   }
-</Script>
+</script>
 
 </html>

@@ -1,27 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
 <body>
-    <div id="app">
-        <p v-if="flag">这是被 v-if 控制的元素</p>
-        <p v-show="flag">这是被 v-show 控制的元素</p>
-        <hr>
-        <span>{{aa}}</span>
-        <div v-if="aa>0.5">随机数大于0.5</div>
-        <div v-else>随机数小于0.5</div>
-        <hr>
-        <div v-if="type === 'A'">优秀</div>
-        <div v-else-if="type === 'B'">良好</div>
-        <div v-else-if="type === 'C'">一般</div>
-        <div v-else>差</div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-    <script>
-        const vm = new Vue({
-            el: '#app',
-            data: {
-                // 如果 flag 为 true，则显示被控制的元素；如果为 false 则隐藏被控制的元素
-                flag: false,
-                type: 'A',
-                aa: Math.random()
-            }
-        })
-    </script>
+    姓名:<input type="text" id="username">
+    <span id="uSpan"></span><br>
 </body>
+<script>
+    //1.为绑定失去焦点事件
+    document.getElementById("username").onblur = function () {
+        //2.创建XMLHttpRequest核心对象
+        let xmlHttp = new XMLHttpRequest();
+        //3打开链接
+        let username = document.getElementById("username").value;
+        xmlHttp.open("post", "a", true);
+        // POST发送请求必须设置请求头
+        xmlHttp.setRequestHeader("Content-type", "application/json");
+        //4.发送请求
+        xmlHttp.send(JSON.stringify({username:username,age:20}));
+        //5处理响应
+        xmlHttp.onreadystatechange = function () {
+            //判断请求响应是否成功
+            if (xmlHttp.readyState === 4 && xmlHttp.status === 200) {
+                //将响应数据显示到标签
+                document.getElementById("uSpan").innerHTML = xmlHttp.responseText;
+            }
+        }
+    }
+</script>
+
+</html>
