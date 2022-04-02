@@ -70,8 +70,9 @@ public class StudentDaoImpl implements StudentDao{
         int result=0;
         Connection con = JDBCUtils.getConnection();
         Statement stat = con.createStatement();
-        String sql = "INSERT INTO student.student VALUES ('"+stu.getId()+"','"+stu.getName()+"','"+stu.getGender()+"','"+stu.getAge()+"','"+stu.getStudentid()+"','"+stu.getPhone()+"','"+stu.getEmail()+"','"+stu.getIdentitycard()+"','"+null+"')";
-//        String sql = "INSERT INTO student.student VALUES ('"+123+"')";
+//        String sql = "INSERT INTO student.student VALUES ('"+stu.getId()+"','"+stu.getName()+"','"+stu.getGender()+"','"+stu.getAge()+"','"+stu.getStudentid()+"','"+stu.getPhone()+"','"+stu.getEmail()+"','"+stu.getIdentitycard()+"','"+null+"')";
+        String sql = "INSERT INTO student.student VALUES (null,'"+stu.getName()+"','"+stu.getGender()+"','"+stu.getAge()+"','"+stu.getStudentid()+"','"+stu.getPhone()+"','"+stu.getEmail()+"','"+stu.getIdentitycard()+"','"+null+"')";
+//
         result=stat.executeUpdate(sql);
         JDBCUtils.close(con,stat);
         return result;

@@ -16,6 +16,8 @@ import java.io.IOException;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.Objects;
+
 @WebServlet("/a")
 public class StudentController extends HttpServlet {
     @lombok.SneakyThrows
@@ -23,18 +25,64 @@ public class StudentController extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         req.setCharacterEncoding("UTF-8");
         resp.setContentType("text/html;charset=UTF-8");
-        String username=req.getParameter("username");
         StudentService service=new StudentServiceImpl();
         ObjectMapper mapper=  new ObjectMapper();
-        //查询所有学生信息
-        ArrayList<Student> list = service.findAll();
-        //json List<Student>转JSON
-        String json =mapper.writeValueAsString(list);
-        System.out.println(json);
-        if(username.equals("1")){
-            System.out.println(111);
-            resp.getWriter().write(json);
-            System.out.println(6666);
+        if(req.getParameter("username")!=null){
+            String username=req.getParameter("username");
+            //查询所有学生信息
+            ArrayList<Student> list = service.findAll();
+            //json List<Student>转JSON
+            String json =mapper.writeValueAsString(list);
+            System.out.println(json);
+            if(username.equals("1")){
+                resp.getWriter().write(json);
+            }
+        }
+        if(req.getParameter("add")!=null) {
+            String add = req.getParameter("add");
+            //添加学生
+                String[] a = add.split(",");
+            Student stu=new Student(0,a[0],a[1],Integer.parseInt(a[2]),Integer.parseInt(a[3]),Integer.parseInt(a[4]),a[5],a[6]);
+            int result= service.insert(stu);
+            if (result!=0){
+                resp.getWriter().write("添加成功了");
+                System.out.println("添加成功了");
+            }else {
+                resp.getWriter().write("添加失败了");
+                System.out.println("添加失败了");
+            }
+        }
+        if(req.getParameter("deletes")!=null) {
+            String delete= req.getParameter("deletes");
+            int result = service.delete(Integer.parseInt(delete));
+            if (result!=0){
+                resp.getWriter().write("删除成功");
+                System.out.println("删除成功");
+            }else {
+                resp.getWriter().write("删除失败");
+                System.out.println("删除失败");
+            }
+        }
+        if(req.getParameter("update")!=null) {
+            String update= req.getParameter("update");
+            String[] a = update.split(",");
+            Student stu = service.findByid(Integer.parseInt(a[0]));
+            stu.setName(a[1]);
+            stu.setGender(a[2]);
+            stu.setAge(Integer.parseInt(a[3]));
+            stu.setStudentid(Integer.parseInt(a[4]));
+            stu.setPhone(Integer.parseInt(a[5]));
+            stu.setEmail(a[6]);
+            stu.setIdentitycard(a[7]);
+            service.update(stu);
+            int result=service.update(stu);
+            if (result!=0){
+                resp.getWriter().write("修改成功");
+                System.out.println("修改成功");
+            }else {
+                resp.getWriter().write("修改失败");
+                System.out.println("修改失败");
+            }
         }
 
 
@@ -54,12 +102,6 @@ public class StudentController extends HttpServlet {
         //json List<Student>转JSON
         String json =mapper.writeValueAsString(list);
         System.out.println(json);
-
-//        for (Student stu :list){
-//
-////            System.out.println(stu);
-//        }
-
     }
     //条件查询，根据id查询学生信息
     @Test
@@ -73,7 +115,7 @@ public class StudentController extends HttpServlet {
     //添加学生
     @Test
     public void insert() throws SQLException {
-        Student stu=new Student(4,"几点上课了","男",56,25,456,"1111","456");
+        Student stu=new Student(0,"几点上课了","男",56,25,456,"1111","456");
         int result= service.insert(stu);
         if (result!=0){
             System.out.println("添加成功了");
