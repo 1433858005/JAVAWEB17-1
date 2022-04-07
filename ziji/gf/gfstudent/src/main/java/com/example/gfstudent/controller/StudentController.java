@@ -44,6 +44,7 @@ public class StudentController extends HttpServlet {
                 resp.getWriter().write(json);
             }
         }
+
         if(req.getParameter("add")!=null) {
             String add = req.getParameter("add");
             //添加学生

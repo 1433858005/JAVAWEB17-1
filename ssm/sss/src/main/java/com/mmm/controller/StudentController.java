@@ -24,8 +24,9 @@ public class StudentController {
         System.out.println("allstudent");
         List<Student> list =studentService.queryAllStudent();
         model.addAttribute("list", list);
-        return "allStudent";
+        return "/allStudent.jsp";
     }
+
     @RequestMapping("/toAddStudent")
     public String toAddPaper(){
         return "addStudent";

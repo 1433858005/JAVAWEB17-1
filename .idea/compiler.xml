@@ -21,6 +21,7 @@
         <module name="english" />
         <module name="jdbc002" />
         <module name="english2" />
+        <module name="gfStudent2" />
         <module name="spring003" />
         <module name="mvc002" />
         <module name="spring001" />
@@ -41,6 +42,7 @@
       <module name="english" target="1.8" />
       <module name="english2" target="1.8" />
       <module name="gfstudent" target="1.8" />
+      <module name="gfStudent2" target="1.8" />
       <module name="jdbc002" target="1.8" />
       <module name="jdbc003" target="9" />
       <module name="jdbcceshi001" target="1.8" />
