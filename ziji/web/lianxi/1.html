@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="vue-2.6.12.js"></script>
+
+<body>
+    <div id="app">
+
+        <p v-text="uname"> {{name}}</p>
+        <div v-html="info"></div>
+        <input type="text" :placeholder="put" v-model.trim="name"><br>
+        <input type="text" :placeholder="put" v-model.unmber="number"><br>
+        <input type="text" v-model.lazy="name"><br>
+        <button @click="click1($event,1)">{{bu}}</button>
+    </div>
+</body>
+
+<script>
+    const vm = new Vue({
+        el: '#app',
+        data: {
+            name: ' 张三',
+            uname: 'lisi',
+            info: '<p style="color:red"; >wangwu</p>',
+            put: '123',
+            bu: 0,
+            number:'123张三',
+        },
+
+
+
+        methods: {
+            click1(e, n) {
+                this.bu += n
+                if (this.bu % 2 === 0) {
+                    e.target.style.backgroundColor = 'red'
+                } else {
+                    e.target.style.backgroundColor = "yellow"
+                }
+            }
+
+
+        }
+
+
+    })
+</script>
+
+</html>

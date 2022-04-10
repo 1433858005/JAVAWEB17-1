@@ -6,7 +6,7 @@ public class Student {
     private  String gender;
     private  int age;
     private  int studentid;
-    private  int phone;
+    private  String phone;
     private  String email;
     private  String identitycard;
     private String img;
@@ -19,7 +19,7 @@ public class Student {
                 ", gender='" + gender + '\'' +
                 ", age=" + age +
                 ", studentid=" + studentid +
-                ", phone=" + phone +
+                ", phone='" + phone + '\'' +
                 ", email='" + email + '\'' +
                 ", identitycard='" + identitycard + '\'' +
                 ", img='" + img + '\'' +
@@ -66,11 +66,11 @@ public class Student {
         this.studentid = studentid;
     }
 
-    public int getPhone() {
+    public String getPhone() {
         return phone;
     }
 
-    public void setPhone(int phone) {
+    public void setPhone(String phone) {
         this.phone = phone;
     }
 
@@ -101,7 +101,7 @@ public class Student {
     public Student() {
     }
 
-    public Student(int id, String name, String gender, int age, int studentid, int phone, String email, String identitycard, String img) {
+    public Student(int id, String name, String gender, int age, int studentid, String phone, String email, String identitycard, String img) {
         this.id = id;
         this.name = name;
         this.gender = gender;

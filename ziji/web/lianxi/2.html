@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="vue-2.6.12.js"></script>
+
+<body>
+    <div id="app">
+
+
+        <!-- vue 提供了内置变量，名字叫做 $event，它就是原生 DOM 的事件对象 e -->
+        <button @click="add($event, 1)">+N</button>
+    </div>
+
+    </div>
+</body>
+<script>
+    const vm = new Vue({
+        el: '#app',
+        data: {
+
+
+        },
+        methods: {
+
+        }
+
+
+    })
+</script>
+
+</html>

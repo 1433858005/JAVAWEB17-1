@@ -26,7 +26,7 @@ public class StudentDaoImpl implements StudentDao{
             String gender = rs.getString("gender");
             int age = rs.getInt("age");
             int studentid = rs.getInt("studentid");
-            int phone = rs.getInt("phone");
+            String phone = rs.getString("phone");
             String email = rs.getString("email");
            String identitycard = rs.getString("identitycard");
            String img=rs.getString("img");
@@ -50,7 +50,7 @@ public class StudentDaoImpl implements StudentDao{
             String gender = rs.getString("gender");
             int age = rs.getInt("age");
             int studentid = rs.getInt("studentid");
-            int phone = rs.getInt("phone");
+           String phone = rs.getString("phone");
             String email = rs.getString("email");
             String identitycard = rs.getString("identitycard");
             stu.setId(sid);
