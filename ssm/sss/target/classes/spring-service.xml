@@ -11,6 +11,7 @@
     <context:component-scan base-package="com.mmm.service" />
 
     <!--BookServiceImpl注入到IOC容器中-->
+<!--    <bean id="StudentServiceImpl" class="com.mmm.service.StudentServiceImpl">-->
     <bean id="StudentServiceImpl" class="com.mmm.service.StudentServiceImpl">
         <property name="studentMapper" ref="studentMapper"/>
     </bean>

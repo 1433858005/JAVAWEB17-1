@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #divv {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+<div id="app">
+    <div id="div5" >
+        {{danci}}
+        {{danci2}}
+    </div>
+    <div id="divv">
+        <button @click="cs" id="b1">9999</button>
+    </div>
+</div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script>
+    aa()
+    function aa() {
+        document.getElementById("b1").click()
+    }
+    const vm = new Vue({
+        el: '#app',
+        data: {
+            danci: '',
+            danci2: 999,
+        },
+        mounted: {
+            cs() {
+                let xmlHttp = new XMLHttpRequest();
+                xmlHttp.open("post", "main", true);
+                xmlHttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+                xmlHttp.send("username=1");
+                xmlHttp.onreadystatechange = function () {
+                    if (xmlHttp.readyState === 4 && xmlHttp.status === 200) {
+                        let arr1 = [];
+                        let b = JSON.parse(xmlHttp.responseText)
+                        arr1.splice(0, arr1.length);
+                        for (let i in b) {
+                            arr1.push(b[i]);
+                        }
+                        alert(arr1[0].name)
+                        this.danci = arr1[0].name
+                        this.danci2 = 6666
+                        // alert(b.english)
+                        // cs2()
+                    }
+                }
+            }
+        }
+    })
+</script>
+
+</html>

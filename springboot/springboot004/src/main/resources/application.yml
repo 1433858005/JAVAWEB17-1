@@ -1,6 +1,12 @@
+#spring:
+#  datasource:
+#    url: jdbc:mysql://localhost/mybatis-plus?useSSL=true&useUnicode=true&characterEncoding=utf8
+#    username: root
+#    password: 15149622693
+#    driver-class-name: com.mysql.cj.jdbc.Driver
 spring:
   datasource:
-    url: jdbc:mysql://localhost/mybatis-plus?useSSL=true&useUnicode=true&characterEncoding=utf8
+    url: jdbc:mysql://gz-cynosdbmysql-grp-i4doar87.sql.tencentcdb.com:25769/english?serverTimezone=UTC&useSSL=true&useUnicode=true&characterEncoding=utf8
     username: root
-    password: 15149622693
+    password: Jp15149622693
     driver-class-name: com.mysql.cj.jdbc.Driver

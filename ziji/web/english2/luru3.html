@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body onmouseup="get_txt();">
+<p>这是一段文字，可以使用鼠标来选中的！</p>
+<script>
+//获取鼠标选中的文字
+//feiniaomy.com
+function get_txt()
+{
+    var txt = window.getSelection ? window.getSelection() : document.selection.createRange().text;
+    alert(txt) ;
+}
+</script>
+</body>
+</html>

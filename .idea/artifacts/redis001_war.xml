@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="redis001:war">
+    <output-path>$PROJECT_DIR$/ziji/lianxi/redis/redis001/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>redis001</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="redis001-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="redis001:war exploded" />
+    </root>
+  </artifact>
+</component>

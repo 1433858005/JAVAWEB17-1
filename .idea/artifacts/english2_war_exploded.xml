@@ -13,6 +13,14 @@
         <element id="directory" name="classes">
           <element id="module-output" name="english2" />
         </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: dom4j:dom4j:1.6.1" />
+          <element id="library" level="project" name="Maven: xml-apis:xml-apis:1.0.b2" />
+          <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpclient:4.5.13" />
+          <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpcore:4.4.13" />
+          <element id="library" level="project" name="Maven: commons-logging:commons-logging:1.2" />
+          <element id="library" level="project" name="Maven: commons-codec:commons-codec:1.11" />
+        </element>
       </element>
       <element id="directory" name="META-INF">
         <element id="file-copy" path="$PROJECT_DIR$/ziji/xiangmu/english2/target/english2-1.0-SNAPSHOT/META-INF/MANIFEST.MF" />
