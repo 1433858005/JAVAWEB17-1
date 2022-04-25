@@ -21,7 +21,6 @@
         <module name="english" />
         <module name="jiaqiang" />
         <module name="jdbc002" />
-        <module name="english2" />
         <module name="english3" />
         <module name="gfStudent2" />
         <module name="redis001" />
@@ -65,7 +64,9 @@
       <module name="spring005" target="1.8" />
       <module name="spring006" target="1.8" />
       <module name="spring007" target="1.8" />
+      <module name="spring008" target="1.8" />
       <module name="spring009" target="1.8" />
+      <module name="spring01" target="1.8" />
       <module name="spring010" target="1.8" />
       <module name="springboot001" target="1.8" />
       <module name="springboot001-1" target="17" />
