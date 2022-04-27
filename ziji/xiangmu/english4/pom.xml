@@ -7,6 +7,7 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>english4</name>
     <description>english4</description>
+    <packaging>war</packaging>
 
     <properties>
         <java.version>1.8</java.version>
@@ -61,6 +62,7 @@
                 </exclusion>
             </exclusions>
         </dependency>
+
     </dependencies>
 
     <dependencyManagement>
@@ -87,10 +89,12 @@
                     <encoding>UTF-8</encoding>
                 </configuration>
             </plugin>
+
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>2.3.7.RELEASE</version>
+
                 <configuration>
                     <mainClass>com.example.english4.English4Application</mainClass>
                 </configuration>
@@ -102,6 +106,11 @@
                         </goals>
                     </execution>
                 </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>3.3.2</version>
             </plugin>
         </plugins>
     </build>

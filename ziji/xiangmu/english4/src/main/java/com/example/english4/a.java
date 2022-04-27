@@ -18,7 +18,7 @@ public class a {
     private EnglishMapper englishMapper;
     @RequestMapping("/s")
     public String save(){
-        List<english> list=englishMapper.findAll("english0002");
+        List<english> list=englishMapper.findAll("english0001");
         System.out.println(list);
         return "list1";
     }
@@ -31,26 +31,45 @@ public class a {
         String json =mapper.writeValueAsString(list);
         return json;
     }
-
-    @RequestMapping("/b")
-    public String save3(HttpServletRequest req) throws JsonProcessingException {
-        String a= req.getParameter("username");
-        System.out.println(a);
-        String [] aa=a.split(",");
-        englishMapper.se(aa[0],aa[1],aa[2]);
-        return "单词---"+aa[1]+"---翻译---"+aa[2]+"---添加成功！在"+aa[0];
-    }
-    @RequestMapping("/main")
-    public String save4() throws JsonProcessingException {
-        Integer all = englishMapper.findAll3();
-        System.out.println( englishMapper.findAll3());
-        int b=new Random().nextInt(all)+1;//随机单词的id
-        List<english> list = englishMapper.findAll4(b);
+    @RequestMapping("/aa")
+    public String save2c() throws JsonProcessingException {
+        List<String> list=englishMapper.findAll2c();
         System.out.println(list);
         ObjectMapper mapper=  new ObjectMapper();
         String json =mapper.writeValueAsString(list);
         return json;
     }
 
+    @RequestMapping("/b")
+    public String save3(HttpServletRequest req) throws JsonProcessingException {
+        String a= req.getParameter("username");
 
+        System.out.println(a);
+        String [] aa=a.split(",");
+        englishMapper.se(aa[0],aa[1],aa[2]);
+        return "单词---"+aa[1]+"---翻译---"+aa[2]+"---添加成功！在"+aa[0];
+    }
+
+    @RequestMapping("/main")
+    public String save4(HttpServletRequest req) throws JsonProcessingException {
+        String a= req.getParameter("username");
+        Integer all = englishMapper.findAll3(a);
+        System.out.println( englishMapper.findAll3(a));
+        int b=new Random().nextInt(all)+1;//随机单词的id
+        List<english> list = englishMapper.findAll4(b,a);
+        System.out.println(list);
+        ObjectMapper mapper=  new ObjectMapper();
+        String json =mapper.writeValueAsString(list);
+        return json;
+    }
+
+    @RequestMapping("/cbiao")
+    public String cbiao(HttpServletRequest req) throws JsonProcessingException {
+        String a= req.getParameter("biao");
+        String b= req.getParameter("ci");
+        String c= req.getParameter("fan");
+        System.out.println(a+b+c);
+         englishMapper.insertc(a,b,c);
+        return b+"添加成功";
+    }
 }
