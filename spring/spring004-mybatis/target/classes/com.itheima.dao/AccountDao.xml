@@ -1,0 +1,29 @@
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.itheima.dao.AccountDao">
+<!--    根据id查询-->
+    <select id="findById" resultType="account"  parameterType="int">
+            select * from springdb.spring001 where id = #{id}
+    </select>
+<!--查询所有-->
+    <select id="findAll" resultType="springdb.spring001"  >
+        select * from springdb.spring001
+    </select>
+<!--保存-->
+    <select id="save" parameterType="springdb.spring001"  >
+       insert into springdb.spring001(name,money)values (#{name},#{money})
+    </select>
+<!--    删除-->
+    <delete id="delete" parameterType="int">
+        delete from springdb.spring001 where id=#{id}
+    </delete>
+<!--    更新-->
+    <update id="update" parameterType="springdb.spring001">
+        update springdb.spring001 set name=#{name},money=#{money} where id=#{id}
+    </update>
+</mapper>
+
