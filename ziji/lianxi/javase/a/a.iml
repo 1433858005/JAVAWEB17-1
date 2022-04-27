@@ -6,10 +6,12 @@
         <option name="ideModuleStorage">
           <map>
             <entry key="com.zeroturnaround.jrebel.FormatVersion" value="7.0.0" />
+            <entry key="com.zeroturnaround.jrebel.remoting.DeleteUnindexedFiles" value="false" />
             <entry key="jrebelEnabled" value="false" />
+            <entry key="rebelXmlGenerationType" value="ide" />
           </map>
         </option>
-        <option name="version" value="6" />
+        <option name="version" value="11" />
       </configuration>
     </facet>
   </component>
