@@ -3,8 +3,10 @@
     <output-path>$PROJECT_DIR$/ziji/lianxi/javase/jiaqiang/target</output-path>
     <properties id="maven-jee-properties">
       <options>
+        <exploded>false</exploded>
         <module>jiaqiang</module>
         <packaging>war</packaging>
+        <unpackNestedArchives>false</unpackNestedArchives>
       </options>
     </properties>
     <root id="archive" name="jiaqiang-1.0-SNAPSHOT.war">

@@ -6,6 +6,7 @@
         <exploded>true</exploded>
         <module>st002rumen</module>
         <packaging>war</packaging>
+        <unpackNestedArchives>false</unpackNestedArchives>
       </options>
     </properties>
     <root id="root">

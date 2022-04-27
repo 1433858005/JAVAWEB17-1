@@ -63,11 +63,10 @@
         <option value="$PROJECT_DIR$/ssm/sss/pom.xml" />
         <option value="$PROJECT_DIR$/ziji/gf/gfStudent2/pom.xml" />
         <option value="$PROJECT_DIR$/ziji/lianxi/redis001/pom.xml" />
-        <option value="$PROJECT_DIR$/ziji/lianxi/redis/redis001/pom.xml" />
         <option value="$PROJECT_DIR$/springboot/springboot-redis01/pom.xml" />
         <option value="$PROJECT_DIR$/ziji/xiangmu/english3/pom.xml" />
         <option value="$PROJECT_DIR$/ziji/xiangmu/english4/pom.xml" />
-        <option value="$PROJECT_DIR$/ziji/lianxi/javase/jiaqiang/pom.xml" />
+        <option value="$PROJECT_DIR$/ziji/lianxi/redis/redis001/pom.xml" />
       </list>
     </option>
   </component>

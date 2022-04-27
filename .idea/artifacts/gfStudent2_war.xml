@@ -3,8 +3,10 @@
     <output-path>$PROJECT_DIR$/ziji/gf/gfStudent2/target</output-path>
     <properties id="maven-jee-properties">
       <options>
+        <exploded>false</exploded>
         <module>gfStudent2</module>
         <packaging>war</packaging>
+        <unpackNestedArchives>false</unpackNestedArchives>
       </options>
     </properties>
     <root id="archive" name="gfStudent2-1.0-SNAPSHOT.war">

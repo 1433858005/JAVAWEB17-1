@@ -19,7 +19,6 @@
         <module name="jdbc003" />
         <module name="springmvc0001" />
         <module name="english" />
-        <module name="jiaqiang" />
         <module name="jdbc002" />
         <module name="english3" />
         <module name="gfStudent2" />
@@ -69,13 +68,13 @@
       <module name="spring01" target="1.8" />
       <module name="spring010" target="1.8" />
       <module name="springboot001" target="1.8" />
-      <module name="springboot001-1" target="17" />
-      <module name="springboot002" target="17" />
-      <module name="springboot003" target="17" />
-      <module name="springboot004" target="17" />
-      <module name="springmvc0001" target="17" />
+      <module name="springboot001-1" target="16" />
+      <module name="springboot002" target="16" />
+      <module name="springboot003" target="16" />
+      <module name="springboot004" target="16" />
+      <module name="springmvc0001" target="16" />
       <module name="ssm01" target="1.8" />
-      <module name="sss" target="17" />
+      <module name="sss" target="16" />
       <module name="st002rumen" target="1.8" />
     </bytecodeTargetLevel>
   </component>

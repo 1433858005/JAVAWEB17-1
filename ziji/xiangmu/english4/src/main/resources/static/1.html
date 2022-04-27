@@ -4,76 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0, user-scalable=no">
+    <!--    <meta name="viewport" content="width=device-width,maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">-->
     <title>Document</title>
     <style>
         .div1 {
-            left: 20px;
-            top: 10px;
-            /* font-size: 1px; */
-            width: 50%;
-            /* height: 80%; */
-            height: 50%;
-            position: fixed;
+            font-size: 17px;
+            width: auto;
             background-color: rgba(240, 223, 175, 0.9);
             color: #660000;
             text-align: center;
-            padding: 100px;
             z-index: 1433858005;
             border-radius: 20px;
             border: 2px solid black;
             display: none
-            /* display: block; */
-        }
-
-        .div1a {
-            left: 20px;
-            top: 10px;
-            /* font-size: 1px; */
-            width: 50%;
-            /* height: 80%; */
-            height: 50%;
-            position: fixed;
-            background-color: rgba(240, 223, 175, 0.9);
-            color: #660000;
-            text-align: center;
-            padding: 100px;
-            z-index: 1433;
-            border-radius: 20px;
-            border: 2px solid black;
-            display: none
-        }
-
-        #ku1,
-        #ku2,
-        #ku3 {
-            font-size: 100px;
-        }
-
-        #sku1,
-        #sku2,
-        #sku3 {
-            font-size: 100px;
         }
 
         #danci {
             text-decoration: none;
-            font-size: 250px;
+            font-size: 80px;
             text-align: center;
-        }
-
-        #dancishu {
-            display: none
-        }
-
-        #id1,
-        #id2 {
-            font-size: 75px;
-            display: none
-        }
-
-        #id3 {
-            font-size: 75px;
         }
 
         #button,
@@ -81,9 +31,9 @@
         #button3,
         #button4,
         #button5 {
-            height: 150px;
-            width: 300px;
-            font-size: 75px;
+            height: 50px;
+            width: 100px;
+            font-size: 25px;
         }
 
         #fanyi {
@@ -93,8 +43,6 @@
 
         .div2 {
             width: 98%;
-            /*margin: auto;*/
-            /*vertical-align:middle;*/
             margin-top: 35%;
         }
 
@@ -104,21 +52,25 @@
 
         .div4 {
             margin-top: 20%;
-
         }
 
         .button5 {
-            /*left:60%;*/
-            margin-left: 60%;
+            margin-left: 45%;
         }
     </style>
 </head>
 
 <body>
 <div id="app">
-
+    <div>
+        <a href="index.html">单词录入页</a>
+        <a href="1.html">单词页</a>
+        <a href="biao.html">查看数据</a>
+    </div>
     <div class="div1" ref="div1">
-        <button @click="qs1">退出</button>
+        <div>
+            <button @click="qs1">退出</button>
+        </div>
         <div>
             <div ref="div2">
                 <span>当前词库{{ciku}}</span>
@@ -147,10 +99,6 @@
         </div>
 
     </div>
-
-
-    <div class="div1a">
-    </div>
     <div class="div2">
         <span id="danci"> {{danci}}</span>
     </div>
@@ -160,12 +108,13 @@
     <div class="div3">
         <button id="button" @click="xia">下一个</button>
         <button id="button2" @click="fan">翻译</button>
-        <button id="button3">上一个</button>
-        <button id="button4" @click="cang">收藏</button>
+        <!--        <button id="button3">上一个</button>-->
+
     </div>
     <div>
     </div>
     <div class="div4">
+        <button id="button4" @click="cang">收藏</button>
         <button id="button5" class="button5" @click="shezhi">设置</button>
     </div>
 </div>
@@ -269,20 +218,28 @@
                     if (xmlHttp.readyState === 4 && xmlHttp.status === 200) {
                         let a = xmlHttp.responseText
                         alert(a)
-                        // let arr1 = [];
-                        // let b = JSON.parse(xmlHttp.responseText)
-                        // arr1.splice(0, arr1.length);
-                        // for (let i in b) {
-                        //     arr1.push(b[i]);
-                        // }
-                        // tt.danci = arr1[0].name
-                        // tt.fanyi = arr1[0].fanyi
                     }
                 }
             }
         },
         created() {
             this.dc()
+            var win = window,
+                doc = document;
+
+            function setFontSize() {
+                var winWidth = $(window).width();
+                // 640宽度以上进行限制
+                var size = (winWidth / 640) * 100;
+                doc.documentElement.style.fontSize = (size < 100 ? size : 100) + 'px';
+            };
+
+            //防止在html未加载完毕时执行，保证获取正确的页宽
+            setTimeout(function () {
+                // 初始化
+                setFontSize;
+
+            }, 200);
 
         },
     })
