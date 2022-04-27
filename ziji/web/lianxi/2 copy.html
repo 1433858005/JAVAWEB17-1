@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+<body>
+    <div id="app">
+        <!-- <button @click="vv='v1'">1</button>
+        <button @click="vv='v2'">2</button>
+        <keep-alive include="v2">
+            <component :is="vv"></component>
+        </keep-alive> -->
+
+        <v1>
+            <template v-slot="aa">  
+                <p>6666666</p>
+            </template>
+
+        </v1>
+
+    </div>
+    <!-- <slot></slot> -->
+</body>
+<script>
+    Vue.component(
+        name = 'v1', {
+            template: '<h1>自定义组件! <slot name="aa"></slot></h1> ',
+            methods: {},
+        })
+    Vue.component('v2', {
+        template: '<h1>自定义组件2!</h1>'
+    })
+
+    const vm = new Vue({
+        el: '#app',
+        data: {
+            vv: "v1"
+        },
+        methods: {
+            c1() {
+                this.$refs.r1.style.color = 'red'
+            },
+        },
+
+    })
+</script>
+
+</html>
