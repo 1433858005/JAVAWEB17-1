@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+<body>
+    <div id="faCounter">
+        <!--faCounter 就是组件元素counter的父元素，要把新建的vue实例绑定在这个父元素-->
+        <counter></counter>
+        <!--counter 就是新建的组件，也就是自定义的元素-->
+    </div>
+</body>
+<script>
+    //定义一个新的vue 组件。组件就是自定义的元素
+    Vue.component("counter", { //1.组件名为"conter"; 2.data 写函数; 3.template 写组件的内容（元素和触发的事件）
+        data: function () {
+            return {
+                count: 0
+            }
+        },
+        //template 是模板的意思，在 html 里面是一个可以同时控制多个子元素的父元素。在这里定义了组件的内容
+        template: '<button v-on:click="count++">点击计算点击次数：{{count}}次</button>'
+    })
+    //定义一个新的vue  实例，用el 绑定组件元素（counter）的父元素  faCounter 元素上
+    new Vue({
+        el: "#faCounter"
+    })
+</script>
+</html>
