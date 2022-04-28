@@ -11,26 +11,19 @@
 
 <body>
     <div id="app">
-        <!-- <button @click="vv='v1'">1</button>
-        <button @click="vv='v2'">2</button>
-        <keep-alive include="v2">
-            <component :is="vv"></component>
-        </keep-alive> -->
-
-        <v1>
-            <template v-slot="aa">  
-                <p>6666666</p>
-            </template>
-
-        </v1>
-
+        <div id="faCounter">
+            <v1>
+                <template #aa>
+                    <p>6666666</p>
+                </template>
+            </v1>
+        </div>
     </div>
-    <!-- <slot></slot> -->
 </body>
 <script>
     Vue.component(
         name = 'v1', {
-            template: '<h1>自定义组件! <slot name="aa"></slot></h1> ',
+            template: '<h1>自定义组件<slot name="aa"></slot></h1>',
             methods: {},
         })
     Vue.component('v2', {
@@ -40,12 +33,10 @@
     const vm = new Vue({
         el: '#app',
         data: {
-            vv: "v1"
+
         },
         methods: {
-            c1() {
-                this.$refs.r1.style.color = 'red'
-            },
+
         },
 
     })

@@ -7,30 +7,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<script src="vue-2.6.12.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 
 <body>
     <div id="app">
-
-
-        <!-- vue 提供了内置变量，名字叫做 $event，它就是原生 DOM 的事件对象 e -->
-        <button @click="add($event, 1)">+N</button>
-    </div>
-
+        <!-- <button @click="vv='v1'">1</button>
+        <button @click="vv='v2'">2</button>
+        <component :is="vv"></component> -->
+        <v1></v1>
+        <v2></v2>
     </div>
 </body>
 <script>
+    Vue.component('v1', {
+        template: '<h1>自定义组件!</h1>'
+    })
+    Vue.component('v2', {
+        template: '<h1>自定义组件2!</h1>'
+    })
     const vm = new Vue({
         el: '#app',
         data: {
-
-
+            // vv: "v1"
         },
         methods: {
-
+            c1() {
+                // this.$refs.r1.style.color = 'red'
+            }
         }
-
-
     })
 </script>
 
