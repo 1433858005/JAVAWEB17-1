@@ -21,6 +21,7 @@
     <file type="web" url="file://$PROJECT_DIR$/ziji/xiangmu/english" />
     <file type="web" url="file://$PROJECT_DIR$/ziji/xiangmu/english2" />
     <file type="web" url="file://$PROJECT_DIR$/ziji/xiangmu/english4" />
+    <file type="web" url="file://$PROJECT_DIR$/ziji/xiangmu/wenjian" />
   </component>
   <component name="JavaScriptSettings">
     <option name="languageLevel" value="FLOW" />
@@ -67,6 +68,7 @@
         <option value="$PROJECT_DIR$/ziji/xiangmu/english3/pom.xml" />
         <option value="$PROJECT_DIR$/ziji/xiangmu/english4/pom.xml" />
         <option value="$PROJECT_DIR$/ziji/lianxi/redis/redis001/pom.xml" />
+        <option value="$PROJECT_DIR$/ziji/xiangmu/wenjian/pom.xml" />
       </list>
     </option>
   </component>

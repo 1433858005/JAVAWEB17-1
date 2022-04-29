@@ -36,6 +36,7 @@
       <module fileurl="file://$PROJECT_DIR$/ssm/ssm01/ssm01.iml" filepath="$PROJECT_DIR$/ssm/ssm01/ssm01.iml" />
       <module fileurl="file://$PROJECT_DIR$/ssm/sss/sss.iml" filepath="$PROJECT_DIR$/ssm/sss/sss.iml" />
       <module fileurl="file://$PROJECT_DIR$/servlet/st002rumen/st002rumen.iml" filepath="$PROJECT_DIR$/servlet/st002rumen/st002rumen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ziji/xiangmu/wenjian/wenjian.iml" filepath="$PROJECT_DIR$/ziji/xiangmu/wenjian/wenjian.iml" />
     </modules>
   </component>
 </project>
