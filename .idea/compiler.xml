@@ -21,11 +21,14 @@
         <module name="springmvc0001" />
         <module name="english" />
         <module name="jdbc002" />
+        <module name="crm" />
         <module name="english3" />
         <module name="gfStudent2" />
+        <module name="redis001" />
         <module name="english4" />
         <module name="spring003" />
         <module name="mvc002" />
+        <module name="shiro" />
         <module name="spring001" />
         <module name="spring002" />
         <module name="spring007" />
@@ -41,6 +44,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="crm" target="1.8" />
       <module name="english" target="1.8" />
       <module name="english2" target="1.8" />
       <module name="english3" target="1.8" />
@@ -56,6 +60,7 @@
       <module name="mvc002" target="1.8" />
       <module name="redis001" target="1.8" />
       <module name="servlet001" target="1.8" />
+      <module name="shiro" target="1.8" />
       <module name="spring001" target="1.8" />
       <module name="spring002" target="1.8" />
       <module name="spring003" target="1.8" />

@@ -1,0 +1,19 @@
+package com.sin.pojo;
+
+import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
+
+@EqualsAndHashCode(callSuper = true)
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@TableName("role_perm")
+public class RolePerm extends BasePojo {
+
+    private long roleId;
+    private long permId;
+
+}

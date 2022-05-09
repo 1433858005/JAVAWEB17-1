@@ -1,0 +1,53 @@
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+<div id="app">
+    <div>
+        <button>获取计算机信息</button>
+    </div>
+    <div>
+        账号 <input type="text" name="" id="" v-model="username">
+        密码<input type="text" name=""  id="" v-model="password">
+        <button @click="d">登录</button>
+    </div>
+</div>
+</body>
+<script src="https://cdn.staticfile.org/vue/2.6.14/vue.js"></script>
+<script>
+    const vm = new Vue({
+        el: '#app',
+        data: {
+            username: '',
+            password: ''
+        },
+        methods: {
+            d() {
+                //2.创建XMLHttpRequest核心对象
+                let xmlHttp = new XMLHttpRequest();
+                //3打开链接
+                xmlHttp.open("post", "b", true);
+                // POST发送请求必须设置请求头
+                xmlHttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+                //4.发送请求
+                xmlHttp.send("username=" + this.username+"&password="+this.password);
+                //5处理响应
+                xmlHttp.onreadystatechange = function () {
+                    //判断请求响应是否成功
+                    if (xmlHttp.readyState === 4 && xmlHttp.status === 200) {
+                        //将响应数据显示到标签
+                        let a = xmlHttp.responseText;
+                        alert(a)
+                        // document.getElementById("s3").innerText =a
+                        window.location.href="b.html";
+                    }
+                }
+            }
+        }
+    })
+</script>

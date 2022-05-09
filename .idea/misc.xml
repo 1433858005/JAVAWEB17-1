@@ -11,6 +11,7 @@
     <file type="web" url="file://$PROJECT_DIR$/ssm/ssm01" />
     <file type="web" url="file://$PROJECT_DIR$/ssm/sss" />
     <file type="web" url="file://$PROJECT_DIR$/ssm01" />
+    <file type="web" url="file://$PROJECT_DIR$/ziji/gf/crm" />
     <file type="web" url="file://$PROJECT_DIR$/ziji/gf/gfstudent" />
     <file type="web" url="file://$PROJECT_DIR$/ziji/gf/gfStudent2" />
     <file type="web" url="file://$PROJECT_DIR$/ziji/lianxi/javase/jiaqiang" />
@@ -18,6 +19,7 @@
     <file type="web" url="file://$PROJECT_DIR$/ziji/lianxi/jdbc/jdbc003" />
     <file type="web" url="file://$PROJECT_DIR$/ziji/lianxi/jdbc/jdbcceshi001" />
     <file type="web" url="file://$PROJECT_DIR$/ziji/lianxi/redis/redis001" />
+    <file type="web" url="file://$PROJECT_DIR$/ziji/lianxi/shiro/shiro" />
     <file type="web" url="file://$PROJECT_DIR$/ziji/xiangmu/english" />
     <file type="web" url="file://$PROJECT_DIR$/ziji/xiangmu/english2" />
     <file type="web" url="file://$PROJECT_DIR$/ziji/xiangmu/english4" />
@@ -67,8 +69,10 @@
         <option value="$PROJECT_DIR$/springboot/springboot-redis01/pom.xml" />
         <option value="$PROJECT_DIR$/ziji/xiangmu/english3/pom.xml" />
         <option value="$PROJECT_DIR$/ziji/xiangmu/english4/pom.xml" />
-        <option value="$PROJECT_DIR$/ziji/lianxi/redis/redis001/pom.xml" />
         <option value="$PROJECT_DIR$/ziji/xiangmu/wenjian/pom.xml" />
+        <option value="$PROJECT_DIR$/ziji/lianxi/redis/redis001/pom.xml" />
+        <option value="$PROJECT_DIR$/ziji/lianxi/shiro/shiro/pom.xml" />
+        <option value="$PROJECT_DIR$/ziji/gf/crm/pom.xml" />
       </list>
     </option>
   </component>

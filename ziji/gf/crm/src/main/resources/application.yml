@@ -1,0 +1,46 @@
+## 服务端口
+server:
+  port: 8080
+
+## 数据库配置
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/demo?useUnicode=true
+    username: root
+    password: 123456
+    ## 使用alibaba druid数据源
+    type: com.alibaba.druid.pool.DruidDataSource
+  ## springboot 配置
+  servlet:
+    multipart:
+      ## 上传一个文件最大值为10MB
+      max-file-size: 10MB
+      ## 上传多个文件的最大值
+      max-request-size: 100MB
+  ## redis
+  redis:
+    database: 0
+    ## redis 服务器地址
+    host: 192.168.119.139
+    ## redis 端口号
+    port: 6379
+    ## redis 密码（默认为空）
+    password: 123456
+    jedis:
+      pool:
+        max-idle: 6
+        max-active: 32
+        max-wait: 100
+        min-idle: 4
+    ## redis 连接超时时间（毫秒）
+    timeout: 1000
+  thymeleaf.prefix=classpath: /templates/
+mybatis-plus:
+  mapper-locations: classpath:mapper/*.xml
+  global-config:
+  configuration:
+    ## 打印sql语句在运行面板上
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+#logging:
+#  config: classpath:logback-spring.xml

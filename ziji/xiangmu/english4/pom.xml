@@ -62,6 +62,12 @@
                 </exclusion>
             </exclusions>
         </dependency>
+        <dependency>
+            <groupId>com.abranhe</groupId>
+            <artifactId>bigdecimal</artifactId>
+            <version>1.0.1</version>
+            <scope>compile</scope>
+        </dependency>
 
     </dependencies>
 
@@ -78,8 +84,11 @@
     </dependencyManagement>
 
     <build>
+        <finalName>eng</finalName>
         <plugins>
+
             <plugin>
+
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.1</version>

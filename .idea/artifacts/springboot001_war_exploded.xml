@@ -6,7 +6,6 @@
         <exploded>true</exploded>
         <module>springboot001</module>
         <packaging>war</packaging>
-        <unpackNestedArchives>false</unpackNestedArchives>
       </options>
     </properties>
     <root id="root">
@@ -85,6 +84,7 @@
           <element id="library" level="project" name="Maven: xml-apis:xml-apis:1.0.b2" />
           <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpclient:4.5.13" />
           <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpcore:4.4.14" />
+          <element id="library" level="project" name="Maven: com.abranhe:bigdecimal:1.0.1" />
         </element>
       </element>
       <element id="directory" name="META-INF">

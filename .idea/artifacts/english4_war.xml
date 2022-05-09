@@ -3,13 +3,11 @@
     <output-path>$PROJECT_DIR$/ziji/xiangmu/english4/target</output-path>
     <properties id="maven-jee-properties">
       <options>
-        <exploded>false</exploded>
         <module>english4</module>
         <packaging>war</packaging>
-        <unpackNestedArchives>false</unpackNestedArchives>
       </options>
     </properties>
-    <root id="archive" name="english4-0.0.1-SNAPSHOT.war">
+    <root id="archive" name="eng.war">
       <element id="artifact" artifact-name="english4:war exploded" />
     </root>
   </artifact>

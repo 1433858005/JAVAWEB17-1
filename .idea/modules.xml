@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/JAVAWEB17.iml" filepath="$PROJECT_DIR$/JAVAWEB17.iml" />
       <module fileurl="file://$PROJECT_DIR$/ziji/lianxi/javase/a/a.iml" filepath="$PROJECT_DIR$/ziji/lianxi/javase/a/a.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ziji/gf/crm/crm.iml" filepath="$PROJECT_DIR$/ziji/gf/crm/crm.iml" />
       <module fileurl="file://$PROJECT_DIR$/ziji/xiangmu/english/english.iml" filepath="$PROJECT_DIR$/ziji/xiangmu/english/english.iml" />
       <module fileurl="file://$PROJECT_DIR$/ziji/xiangmu/english3/english3.iml" filepath="$PROJECT_DIR$/ziji/xiangmu/english3/english3.iml" />
       <module fileurl="file://$PROJECT_DIR$/ziji/xiangmu/english4/english4.iml" filepath="$PROJECT_DIR$/ziji/xiangmu/english4/english4.iml" />
@@ -16,7 +17,9 @@
       <module fileurl="file://$PROJECT_DIR$/ajax/json/json01.iml" filepath="$PROJECT_DIR$/ajax/json/json01.iml" />
       <module fileurl="file://$PROJECT_DIR$/springmvc/mvc001/mvc001.iml" filepath="$PROJECT_DIR$/springmvc/mvc001/mvc001.iml" />
       <module fileurl="file://$PROJECT_DIR$/springmvc/mvc002/mvc002.iml" filepath="$PROJECT_DIR$/springmvc/mvc002/mvc002.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ziji/lianxi/redis/redis001/redis001.iml" filepath="$PROJECT_DIR$/ziji/lianxi/redis/redis001/redis001.iml" />
       <module fileurl="file://$PROJECT_DIR$/servlet/001/servlet001.iml" filepath="$PROJECT_DIR$/servlet/001/servlet001.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ziji/lianxi/shiro/shiro/shiro.iml" filepath="$PROJECT_DIR$/ziji/lianxi/shiro/shiro/shiro.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring/spring001/spring001.iml" filepath="$PROJECT_DIR$/spring/spring001/spring001.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring/spring002/spring002.iml" filepath="$PROJECT_DIR$/spring/spring002/spring002.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring/spring003/spring003.iml" filepath="$PROJECT_DIR$/spring/spring003/spring003.iml" />

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <!-- 日志存放路径 -->
+<!--    <property name="log.path" value = "./logs"/>-->
+    <!-- 日志输出格式 -->
+    <property name="log.pattern" value="%d{HH:mm:ss.SSS} [%thread] % -5level %logger{20} - [%method,%line] - %msg%n"/>
+
+    <!-- 控制台输出 -->
+
+
+<!--    <appender  name="console" clas="ch.qos.logback.core.ConsoleAppender">-->
+
+<!--        <encoder>-->
+<!--            <pattern>-->
+<!--                %red(%d{yyyy-MM-dd HH:mm:ss})-->
+<!--                %green([%thread]) %yellow(%-5level) %blue(logger) - %cyan(%msg%n)-->
+<!--            </pattern>-->
+<!--        </encoder>-->
+
+<!--    </appender>-->
+
+    <!-- 系统日志输出 -->
+<!--    <appender name="pigs_error" class="ch.qos.logback.core.rolling.RollingFileAppender">-->
+<!--        <file>%{log.path}/pigs-info.log</file>-->
+<!--        &lt;!&ndash; 循环策略，基于时间创建日志文件 &ndash;&gt;-->
+<!--        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">-->
+<!--            &lt;!&ndash; 日志文件名格式 &ndash;&gt;-->
+<!--            <fileNamePattern>${log.path}/pigs-info.%d{yyyy-MM-dd}.log</fileNamePattern>-->
+<!--            &lt;!&ndash; 日志最大的历史 3 &ndash;&gt;-->
+<!--            <maxHistory>3</maxHistory>-->
+<!--        </rollingPolicy>-->
+<!--        <encoder>-->
+<!--            <pattern>${log.pattern}</pattern>-->
+<!--        </encoder>-->
+<!--        <filter class="ch.qos.logback.classic.filter.LevelFilter">-->
+<!--            &lt;!&ndash; 过滤级别 &ndash;&gt;-->
+<!--            <level>INFO</level>-->
+<!--            &lt;!&ndash; 匹配时的操作:接收（记录）&ndash;&gt;-->
+<!--            <onMatch>ACCEPT</onMatch>-->
+<!--            &lt;!&ndash; 不匹配时的操作：拒绝（不记录） &ndash;&gt;-->
+<!--            <onMismatch>DENY</onMismatch>-->
+<!--        </filter>-->
+<!--    </appender>-->
+<!--    <appender name="pigs_info" class="ch.qos.logback.core.rolling.RollingFileAppender">-->
+<!--        <file>%{log.path}/pigs-info.log</file>-->
+<!--        &lt;!&ndash; 循环策略，基于时间创建日志文件 &ndash;&gt;-->
+<!--        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">-->
+<!--            &lt;!&ndash; 日志文件名格式 &ndash;&gt;-->
+<!--            <fileNamePattern>${log.path}/pigs-info.%d{yyyy-MM-dd}.log</fileNamePattern>-->
+<!--            &lt;!&ndash; 日志最大的历史 30 &ndash;&gt;-->
+<!--            <maxHistory>30</maxHistory>-->
+<!--        </rollingPolicy>-->
+<!--        <encoder>-->
+<!--            <pattern>${log.pattern}</pattern>-->
+<!--        </encoder>-->
+<!--        <filter class="ch.qos.logback.classic.filter.LevelFilter">-->
+<!--            &lt;!&ndash; 过滤级别 &ndash;&gt;-->
+<!--            <level>INFO</level>-->
+<!--            &lt;!&ndash; 匹配时的操作:接收（记录）&ndash;&gt;-->
+<!--            <onMatch>ACCEPT</onMatch>-->
+<!--            &lt;!&ndash; 不匹配时的操作：拒绝（不记录） &ndash;&gt;-->
+<!--            <onMismatch>DENY</onMismatch>-->
+<!--        </filter>-->
+<!--    </appender>-->
+
+
+    <!-- 用户访问日志的输出 -->
+<!--    <appender name="pigs-user" class="ch.qos.logback.core.rolling.RollingFileAppender">-->
+<!--        <file>%{log.path}/pigs-user.log</file>-->
+<!--        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">-->
+<!--            &lt;!&ndash;  按天回滚 daily &ndash;&gt;-->
+<!--            <fileNamePattern>${log.path}/pigs-user.%d{yyyy-MM-dd}.log</fileNamePattern>-->
+<!--            &lt;!&ndash; 日志最大的历史 3 &ndash;&gt;-->
+<!--            <maxHistory>3</maxHistory>-->
+<!--        </rollingPolicy>-->
+<!--        <encoder>-->
+<!--            <pattern>${log.patten}</pattern>-->
+<!--        </encoder>-->
+<!--    </appender>-->
+
+    <!--  系统模板日志级别控制 -->
+    <logger name="com.sin" level="info"/>
+    <!-- spring日志级别控制 -->
+    <logger name="org.springframework" level="warn"/>
+
+<!--    <root level="info">-->
+<!--        <appender-ref ref="console"/>-->
+<!--    </root>-->
+
+    <!-- 系统操作日志 -->
+<!--    <root level="info">-->
+<!--        <appender-ref ref="pigs_info"/>-->
+<!--        <appender-ref ref="pigs_error"/>-->
+<!--    </root>-->
+
+    <!-- 系统用户操作日志 -->
+<!--    <logger name="pigs-user" level="info">-->
+<!--        <appender-ref ref="pigs_user"/>-->
+<!--    </logger>-->
+
+
+</configuration>

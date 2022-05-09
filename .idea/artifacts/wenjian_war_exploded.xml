@@ -6,7 +6,6 @@
         <exploded>true</exploded>
         <module>wenjian</module>
         <packaging>war</packaging>
-        <unpackNestedArchives>false</unpackNestedArchives>
       </options>
     </properties>
     <root id="root">
@@ -55,6 +54,7 @@
           <element id="library" level="project" name="Maven: jakarta.activation:jakarta.activation-api:1.2.2" />
           <element id="library" level="project" name="Maven: org.springframework:spring-core:5.3.19" />
           <element id="library" level="project" name="Maven: org.springframework:spring-jcl:5.3.19" />
+          <element id="library" level="project" name="Maven: com.abranhe:bigdecimal:1.0.1" />
         </element>
       </element>
       <element id="directory" name="META-INF">

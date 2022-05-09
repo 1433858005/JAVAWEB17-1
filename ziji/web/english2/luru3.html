@@ -15,7 +15,6 @@
             <a href="1.html">单词页</a>
         </div>
         <div>
-            {{d}}
             当前查看的表 {{biaoming}}
         </div>
         <div ref="div2">
@@ -55,7 +54,7 @@
         </div>
     </div>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script src="https://cdn.staticfile.org/vue/2.6.14/vue.js"></script>
 <script>
     const vm = new Vue({
         el: '#app',
@@ -76,16 +75,16 @@
                 let bb
                 if (n === 'a') {
                     this.ci = "词库表"
-                    a = 'a'
+                    a = 'https://qpanpan.com/eng/a'
                 } else if (n === 'aa') {
                     this.ci = "收藏表"
-                    a = 'aa'
+                    a = 'https://qpanpan.com/eng/aa'
                 } else if (n === "b") {
                     bb = "username=" + this.biaoming
                     if (this.ci === "词库表") {
-                        a = "a2"
+                        a = "https://qpanpan.com/eng/a2"
                     } else {
-                        a = "aa2"
+                        a = "https://qpanpan.com/eng/aa2"
                     }
                 }
                 let xmlHttp = new XMLHttpRequest();
