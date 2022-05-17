@@ -3,8 +3,10 @@
     <output-path>$PROJECT_DIR$/servlet/st002rumen/target</output-path>
     <properties id="maven-jee-properties">
       <options>
+        <exploded>false</exploded>
         <module>st002rumen</module>
         <packaging>war</packaging>
+        <unpackNestedArchives>false</unpackNestedArchives>
       </options>
     </properties>
     <root id="archive" name="st002rumen-1.0-SNAPSHOT.war">

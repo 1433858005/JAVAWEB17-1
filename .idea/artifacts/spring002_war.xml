@@ -3,8 +3,10 @@
     <output-path>$PROJECT_DIR$/spring/spring002/target</output-path>
     <properties id="maven-jee-properties">
       <options>
+        <exploded>false</exploded>
         <module>spring002</module>
         <packaging>war</packaging>
+        <unpackNestedArchives>false</unpackNestedArchives>
       </options>
     </properties>
     <root id="archive" name="spring002-1.0-SNAPSHOT.war">

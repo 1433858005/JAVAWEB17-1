@@ -4,217 +4,287 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>单次录入1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0, user-scalable=no">
+    <title>Document</title>
     <style>
-        #divv {
+        .div1 {
+            font-size: 17px;
+            width: auto;
+            background-color: rgba(240, 223, 175, 0.9);
+            color: #660000;
+            text-align: center;
+            z-index: 1433858005;
+            border-radius: 20px;
+            border: 2px solid black;
             display: none
         }
 
-        #div2 {
-            vertical-align: top;
-            font-size: 150%;
+        #danci {
+            text-decoration: none;
+            font-size: 80px;
+            text-align: center;
+            background-color: rgba(43, 219, 175, 0.349);
         }
 
-        #div3 {
-            float: left;
-            display: block;
+        #button,
+        #button2,
+        #button3,
+        #button4,
+        #button5 {
+            height: 50px;
+            width: 100px;
+            font-size: 25px;
+            background-color: rgba(69, 107, 189, 0.5);
+            opacity:0.2;
+            border: none;
+            border-radius: 40px;
         }
 
-        #div4 {
-            float: top;
-            display: block;
-            font-size: 200%;
-        }
-
-        #div5 {
+        #fanyi {
+            font-size: 75px;
             display: none
+        }
+
+        .div2 {
+            width: 98%;
+            margin-top: 35%;
+        }
+
+        .div3 {
+            margin-top: 20%;
+        }
+
+        .div4 {
+            margin-top: 20%;
+        }
+
+        .button5 {
+            margin-left: 45%;
+        }
+
+        body {
+            background-image: url(1.jpg);
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            position: absolute;
+            overflow: hidden;
+            display: block
         }
     </style>
+
 </head>
 
 <body>
 <div id="app">
     <div>
-        <a href="index.html">单词录入页</a>
-        <a href="1.html">单词页</a>
+        <a href="luru.html">单词录入</a>
         <a href="biao.html">查看数据</a>
     </div>
-    <div>
-        <span id="s3"></span>
-    </div>
-    <div id="div5">
-        <table class="table table-bordered table-hover table-striped">
-            <thead>
-            <th>索引</th>
-            <th>数据表</th>
-            </thead>
-            <tbody>
-            <!-- <tr v-for="(item, index) in list" :key="item.id"> -->
-            <tr v-for="(item, index) in list">
-                <td>{{ index+1 }}</td>
-                <td>{{ item}}</td>
-                <td><button @click="m5(item)">选择{{ item}}</button></td>
-            </tr>
-            </tbody>
-        </table>
-    </div>
-
-    <div id="div4">
-        <span> {{q1}}</span>
-        <span style="color: rgba(255, 128, 0, 0.953);"> {{q2}}</span>
-
-        单词 <span id="s1" style="color: blueviolet;"></span>
-        翻译<span id="s2" style="color: green;"></span>
-    </div>
-    <div @mouseup="m1">
-        <!-- 文本内容 -->
-        <div id="div2">
-            <button @click="m2">保存文本</button>
-            <button @click="m3">修改文本</button>
-            <button @click="m4">选择数据表</button>
-            <span>当前数据表<span style="color: green;">{{q4}}</span></span>
-            <div id="div3">
-                <textarea name="textarea" id="textarea" cols="100" rows="100" aria-setsize=150%></textarea>
+    <div class="div1" ref="div1">
+        <div>
+            <button @click="qs1">退出</button>
+        </div>
+        <div>
+            <div ref="div2">
+                <span>当前词库{{ciku}}</span>
+                <button @click="ci1('a')">修改词库</button>
             </div>
-            <div>
-                {{q3}}
+
+            <div ref="div3">
+                <span>当前收藏表{{cangbiao}}</span>
+                <button @click="ci1('aa')">修改收藏表</button>
+            </div>
+            <div ref="div4">
+                <table class="table table-bordered table-hover table-striped">
+                    <thead>
+                    <th>索引</th>
+                    <th>{{ci}}</th>
+                    </thead>
+                    <tbody>
+                    <tr v-for="(item, index) in list">
+                        <td>{{ index+1 }}</td>
+                        <td>{{ item}}</td>
+                        <td><button @click="m1(item)">选择{{item}}</button></td>
+                    </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
+
     </div>
-    <div @keydown="key1($event)">
+    <div class="div2">
+        <span id="danci"> {{danci}}</span>
     </div>
-    <div id="divv">
-        <button @click="cs" id="b1"> 9999</button>
-        <button @click="cs2" id="b2"> 9999</button>
-        <button @click="cs3" id="b3"> 9999</button>
+    <div id="fanyi" ref="fan">
+        {{fanyi}}
+    </div>
+    <div class="div3">
+        <button id="button" @click="xia">下一个</button>
+        <button id="button2" @click="fan">翻译</button>
+        <!--        <button id="button3">上一个</button>-->
+
     </div>
     <div>
-
     </div>
-
+    <div class="div4">
+        <button id="button4" @click="cang">收藏</button>
+        <button id="button5" class="button5" @click="shezhi">设置</button>
+    </div>
 </div>
+
 </body>
 <script src="https://cdn.staticfile.org/vue/2.6.14/vue.js"></script>
+
 <script>
-    //q按键
-    document.onkeydown = function (event) {
-        event = event || window.event;
-        if (event.keyCode == 81) {
-            document.getElementById("b1").click()
-        }
-        if (event.keyCode == 87) {
-            document.getElementById("b2").click()
-        }
-        if (event.keyCode == 69) {
-            document.getElementById("b3").click()
-        }
-    };
-    let arr1 = [1, 2, 3];
-    aa();
-
-    function aa() {
-
-    }
     const vm = new Vue({
         el: '#app',
         data: {
-            q1: '123',
-            q2: '12',
-            q3: '',
-            q4: 'english0001',
-            list: arr1
+            danci: 'hdajkgdkagdjka',
+            fanyi: '翻译',
+            ciku: 'english0001',
+            list: '',
+            cangbiao: 'panpan1',
+            ci: '',
+            cishu: 0,
+            //下一个单词次数
+            arr: [],
         },
+
         methods: {
-            m1() {
-                this.q1 = window.getSelection ? window.getSelection() : document.selection.createRange().text;
-                this.q2 = this.q1;
-                this.q1 = "选中";
+            fan() {
+                this.$refs.fan.style.display = "block"
             },
-            key1(event) {
-                // event = event || window.event;
-                // if (event.keyCode == 81) {
-                //     alert(8888)
-                //     // this.q3 = this.q2;
-                //     // alert(q2)
-                //     // q2 = '完成'
-                // }
+            xia() {
+                this.dc()
+                this.cishu += 1
+                if (this.cishu / 10 % 1 === 0) {
+                    document.querySelector("body").style.backgroundImage =
+                        "url(http://x.qpanpan.com/tupian/zimuapp/" + this.arr[this.cishu / 10 - 1] + ".jpg)"
+                }
+                this.$refs.fan.style.display = "none"
             },
-            cs() {
-                document.getElementById("s1").innerText = this.q2;
-                this.q2 = '完成'
+            shezhi() {
+                this.$refs.div1.style.display = "block"
             },
-            cs2() {
-                document.getElementById("s2").innerText = this.q2;
-                this.q2 = '完成'
+            qs1() {
+                this.$refs.div1.style.display = "none"
             },
-            cs3() {
-                let d = this.q4
-                let a = document.getElementById("s1").innerText
-                let b = document.getElementById("s2").innerText
-                let c = d + ',' + a + ',' + b
-                //2.创建XMLHttpRequest核心对象
-                let xmlHttp = new XMLHttpRequest();
-                //3打开链接
-                xmlHttp.open("post", "b", true);
-                // POST发送请求必须设置请求头
-                xmlHttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-                //4.发送请求
-                xmlHttp.send("username=" + c);
-                //5处理响应
-                xmlHttp.onreadystatechange = function () {
-                    //判断请求响应是否成功
-                    if (xmlHttp.readyState === 4 && xmlHttp.status === 200) {
-                        //将响应数据显示到标签
-                        let a = xmlHttp.responseText;
-                        document.getElementById("s3").innerText =a
-                    }
+            m1(n) {
+                if (this.ci === "词库表") {
+                    this.ciku = n
+                } else {
+                    this.cangbiao = n
                 }
 
-
-
+                this.$refs.div4.style.display = "none"
+                this.$refs.div2.style.display = "block"
+                this.$refs.div3.style.display = "block"
             },
-            m2() {
-                // let a = document.getElementById("textarea").value
-                this.q3 = document.getElementById("textarea").value
-                document.querySelector("#div3").style.display = "none";
-            },
-            m3() {
-                document.getElementById("textarea").value = this.q3
-                document.querySelector("#div3").style.display = "block";
-            },
-            m4() {
-                //2.创建XMLHttpRequest核心对象
+            ci1(n) {
+                let a
+                if (n === 'a') {
+                    this.ci = "词库表"
+                    a = 'a'
+                    this.$refs.div3.style.display = "none"
+                    this.$refs.div4.style.display = "block"
+                } else {
+                    this.ci = "收藏表"
+                    a = 'aa'
+                    this.$refs.div2.style.display = "none"
+                    this.$refs.div4.style.display = "block"
+                }
                 let xmlHttp = new XMLHttpRequest();
-                //3打开链接
-                xmlHttp.open("post", "a", true);
-                // POST发送请求必须设置请求头
+                xmlHttp.open("post", a, true);
                 xmlHttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-                //4.发送请求
                 xmlHttp.send("username=1");
-                //5处理响应
+                var tt = this
                 xmlHttp.onreadystatechange = function () {
-                    //判断请求响应是否成功
                     if (xmlHttp.readyState === 4 && xmlHttp.status === 200) {
-                        //将响应数据显示到标签
-                        // let a = xmlHttp.responseText;
+                        let b = JSON.parse(xmlHttp.responseText)
+                        let arr2 = [];
+                        arr2.splice(0, arr2.length);
+                        for (let i in b) {
+                            arr2.push(b[i]);
+                        }
+                        tt.list = arr2
+                    }
+                }
+            },
+            dc() {
+                // alert(666)
+                let xmlHttp = new XMLHttpRequest();
+                xmlHttp.open("post", "main", true);
+                xmlHttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+                xmlHttp.send("username=" + this.ciku);
+                var tt = this
+                xmlHttp.onreadystatechange = function () {
+                    if (xmlHttp.readyState === 4 && xmlHttp.status === 200) {
+                        let arr1 = [];
                         let b = JSON.parse(xmlHttp.responseText)
                         arr1.splice(0, arr1.length);
                         for (let i in b) {
                             arr1.push(b[i]);
                         }
-
+                        tt.danci = arr1[0].name
+                        tt.fanyi = arr1[0].fanyi
                     }
                 }
-                document.querySelector("#div5").style.display = "block";
-
             },
-            m5(n) {
-                this.q4 = n;
-                document.querySelector("#div5").style.display = "none";
-
+            cang() {
+                let xmlHttp = new XMLHttpRequest();
+                xmlHttp.open("post", "cbiao", true);
+                xmlHttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+                xmlHttp.send("biao=" + this.cangbiao + "&ci=" + this.danci + "&fan=" + this.fanyi);
+                var tt = this
+                xmlHttp.onreadystatechange = function () {
+                    if (xmlHttp.readyState === 4 && xmlHttp.status === 200) {
+                        let a = xmlHttp.responseText
+                        alert(a)
+                    }
+                }
             }
-        }
+        },
+        created() {
+            this.dc()
+            //开始随机字母背景
+            // let arr = []
+            for (let o = 1; o < 10; o++) {
+                this.arr.push(o)
+            }
+            //小写 26个字母
+            for (let i = 65; i <= 90; i++) {
+                this.arr.push(String.fromCharCode(i).toLowerCase())
+            }
+
+            let b = this.arr[getRandomInt(0, 35)]
+
+            function getRandomInt(min, max) {
+                min = Math.ceil(min);
+                max = Math.floor(max);
+                return Math.floor(Math.random() * (max - min)) + min; //不含最大值，含最小值
+            }
+            document.querySelector("body").style.backgroundImage =
+                "url(http://x.qpanpan.com/tupian/zimuapp/" + b + ".jpg)"
+            var win = window,
+                doc = document;
+
+            function setFontSize() {
+                var winWidth = $(window).width();
+                // 640宽度以上进行限制
+                var size = (winWidth / 640) * 100;
+                doc.documentElement.style.fontSize = (size < 100 ? size : 100) + 'px';
+            };
+
+            //防止在html未加载完毕时执行，保证获取正确的页宽
+            setTimeout(function () {
+                // 初始化
+                setFontSize;
+
+            }, 200);
+
+        },
     })
 </script>
 

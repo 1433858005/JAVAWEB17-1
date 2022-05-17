@@ -1,6 +1,7 @@
 {
     "recommendations": [
         "yao-translate.yao-translate",
-        "GitHub.vscode-pull-request-github"
+        "github.vscode-pull-request-github",
+        "MS-CEINTL.vscode-language-pack-zh-hans"
     ]
 }
