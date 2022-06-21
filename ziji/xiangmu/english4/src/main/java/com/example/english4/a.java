@@ -60,6 +60,15 @@ public class a {
         String json =mapper.writeValueAsString(list);
         return json;
     }
+    //
+    @RequestMapping("/fbiao")
+    public String save2cc() throws JsonProcessingException {
+        List<String> list=englishMapper.findAll2();
+        List<String> list2=englishMapper.findAll2c();
+        System.out.println(list.get(0));
+        System.out.println(list2.get(0));
+        return list.get(0)+","+list2.get(0);
+    }
 //词库录入 添加单词
     @RequestMapping("/b")
     public String save3(HttpServletRequest req) throws JsonProcessingException {
@@ -69,6 +78,16 @@ public class a {
         englishMapper.se(aa[0],aa[1],aa[2]);
         return "单词---"+aa[1]+"---翻译---"+aa[2]+"---添加成功！在"+aa[0];
     }
+    //词库录入 添加单词  新版 有时间，MP3
+    @RequestMapping("/nb")
+    public String save33(HttpServletRequest req) throws JsonProcessingException {
+        String a= req.getParameter("username");
+        System.out.println(a);
+        String [] aa=a.split(",panpan");
+        englishMapper.see(aa[0],aa[1],aa[2],aa[3]);
+        return "单词---"+aa[1]+"---翻译---"+aa[2]+"---添加成功！在"+aa[0];
+    }
+
 //出随机单词
     @RequestMapping("/main")
     public String save4(HttpServletRequest req) throws JsonProcessingException {
@@ -76,12 +95,15 @@ public class a {
         Integer all = englishMapper.findAll3(a);
         System.out.println( englishMapper.findAll3(a));
         int b=new Random().nextInt(all)+1;//随机单词的id
+
         List<english> list = englishMapper.findAll4(b,a);
         System.out.println(list);
+
         ObjectMapper mapper=  new ObjectMapper();
         String json =mapper.writeValueAsString(list);
         return json;
     }
+
 //添加到收藏表
     @RequestMapping("/cbiao")
     public String cbiao(HttpServletRequest req) throws JsonProcessingException {

@@ -35,18 +35,18 @@
             width: 100px;
             font-size: 25px;
             background-color: rgba(69, 107, 189, 0.5);
-            opacity:0.2;
+            opacity: 0.2;
             border: none;
             border-radius: 40px;
         }
 
         #fanyi {
-            font-size: 75px;
+            font-size: 30px;
             display: none
         }
 
         .div2 {
-            width: 98%;
+            width: 100%;
             margin-top: 35%;
         }
 
@@ -70,7 +70,8 @@
             background-size: cover;
             position: absolute;
             overflow: hidden;
-            display: block
+            display: block;
+            margin-left: 0;
         }
     </style>
 
@@ -78,6 +79,9 @@
 
 <body>
 <div id="app">
+    <audio id="mp"  ref="mpp">
+        <source  type="audio/mpeg" >
+    </audio>
     <div>
         <a href="luru.html">单词录入</a>
         <a href="biao.html">查看数据</a>
@@ -115,7 +119,8 @@
 
     </div>
     <div class="div2">
-        <span id="danci"> {{danci}}</span>
+        <!-- <p id="danci">{{danci}}</p> -->
+        <span id="danci" ref="dcc" @click="dc()"> {{danci}}</span>
     </div>
     <div id="fanyi" ref="fan">
         {{fanyi}}
@@ -123,8 +128,7 @@
     <div class="div3">
         <button id="button" @click="xia">下一个</button>
         <button id="button2" @click="fan">翻译</button>
-        <!--        <button id="button3">上一个</button>-->
-
+        <button id="button3" @click="du">读</button>
     </div>
     <div>
     </div>
@@ -141,15 +145,16 @@
     const vm = new Vue({
         el: '#app',
         data: {
-            danci: 'hdajkgdkagdjka',
-            fanyi: '翻译',
-            ciku: 'english0001',
+            danci: '',
+            fanyi: '联系18628699912',
+            ciku: '',
             list: '',
-            cangbiao: 'panpan1',
+            cangbiao: '',
             ci: '',
             cishu: 0,
             //下一个单词次数
             arr: [],
+            mp3: ''
         },
 
         methods: {
@@ -161,7 +166,7 @@
                 this.cishu += 1
                 if (this.cishu / 10 % 1 === 0) {
                     document.querySelector("body").style.backgroundImage =
-                        "url(http://x.qpanpan.com/tupian/zimuapp/" + this.arr[this.cishu / 10 - 1] + ".jpg)"
+                        "url(http://c.qpanpan.com/tupian/zimuapp/" + this.arr[this.cishu / 10 - 1] + ".jpg)"
                 }
                 this.$refs.fan.style.display = "none"
             },
@@ -212,6 +217,7 @@
                     }
                 }
             },
+            //获取单词数据
             dc() {
                 // alert(666)
                 let xmlHttp = new XMLHttpRequest();
@@ -229,9 +235,11 @@
                         }
                         tt.danci = arr1[0].name
                         tt.fanyi = arr1[0].fanyi
+                        tt.mp3 = arr1[0].mp3
                     }
                 }
             },
+            //添加到收藏表
             cang() {
                 let xmlHttp = new XMLHttpRequest();
                 xmlHttp.open("post", "cbiao", true);
@@ -244,10 +252,33 @@
                         alert(a)
                     }
                 }
+            },
+            //设置进网页的默认词库表和收藏表
+            cang2() {
+                let xmlHttp = new XMLHttpRequest();
+                xmlHttp.open("post", "fbiao", true);
+                xmlHttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+                xmlHttp.send();
+                var tt = this
+                xmlHttp.onreadystatechange = function () {
+                    if (xmlHttp.readyState === 4 && xmlHttp.status === 200) {
+                        let a = xmlHttp.responseText
+                        tt.ciku = a.split(",")[0]
+                        tt.cangbiao = a.split(",")[1]
+                        tt.dc()
+                    }
+                }
+            },
+            du() {
+                this.$refs.mpp.src = this.mp3;
+                document.querySelectorAll("#mp")[0].play()
+                // this.$refs.mpp.play()
             }
         },
         created() {
+            this.cang2()
             this.dc()
+
             //开始随机字母背景
             // let arr = []
             for (let o = 1; o < 10; o++) {
@@ -266,7 +297,7 @@
                 return Math.floor(Math.random() * (max - min)) + min; //不含最大值，含最小值
             }
             document.querySelector("body").style.backgroundImage =
-                "url(http://x.qpanpan.com/tupian/zimuapp/" + b + ".jpg)"
+                "url(http://c.qpanpan.com/tupian/zimuapp/" + b + ".jpg)"
             var win = window,
                 doc = document;
 
@@ -281,10 +312,26 @@
             setTimeout(function () {
                 // 初始化
                 setFontSize;
-
             }, 200);
 
         },
+        updated() {
+            //自适应字体大小
+            document.querySelector("#danci").style.fontSize = 80 + 'px'
+            for (let i = 80; i > 16; i--) {
+                //获取div实际宽度
+                let div = document.querySelector(".div2").clientWidth
+                //获取当前p标签的单词实际宽度
+                let p = document.querySelector("#danci").offsetWidth
+                if (div < p) {
+                    //设置单词的大小
+                    document.querySelector("#danci").style.fontSize = i + 'px'
+                    console.log(i)
+                } else {
+                    break
+                }
+            }
+        }
     })
 </script>
 

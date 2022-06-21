@@ -57,17 +57,17 @@
           <element id="library" level="project" name="Maven: org.springframework:spring-oxm:5.2.12.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.ws:spring-ws-core:3.0.10.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.ws:spring-xml:3.0.10.RELEASE" />
-          <element id="library" level="project" name="Maven: com.baomidou:mybatis-plus-boot-starter:3.4.2" />
-          <element id="library" level="project" name="Maven: com.baomidou:mybatis-plus:3.4.2" />
-          <element id="library" level="project" name="Maven: com.baomidou:mybatis-plus-extension:3.4.2" />
-          <element id="library" level="project" name="Maven: com.baomidou:mybatis-plus-core:3.4.2" />
-          <element id="library" level="project" name="Maven: com.baomidou:mybatis-plus-annotation:3.4.2" />
-          <element id="library" level="project" name="Maven: com.github.jsqlparser:jsqlparser:4.0" />
+          <element id="library" level="project" name="Maven: com.baomidou:mybatis-plus-boot-starter:3.5.1" />
+          <element id="library" level="project" name="Maven: com.baomidou:mybatis-plus:3.5.1" />
+          <element id="library" level="project" name="Maven: com.baomidou:mybatis-plus-extension:3.5.1" />
+          <element id="library" level="project" name="Maven: com.baomidou:mybatis-plus-core:3.5.1" />
+          <element id="library" level="project" name="Maven: com.baomidou:mybatis-plus-annotation:3.5.1" />
+          <element id="library" level="project" name="Maven: com.github.jsqlparser:jsqlparser:4.3" />
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-autoconfigure:2.3.7.RELEASE" />
-          <element id="library" level="project" name="Maven: org.mybatis.spring.boot:mybatis-spring-boot-starter:2.1.4" />
-          <element id="library" level="project" name="Maven: org.mybatis.spring.boot:mybatis-spring-boot-autoconfigure:2.1.4" />
-          <element id="library" level="project" name="Maven: org.mybatis:mybatis:3.5.6" />
-          <element id="library" level="project" name="Maven: org.mybatis:mybatis-spring:2.0.6" />
+          <element id="library" level="project" name="Maven: org.mybatis.spring.boot:mybatis-spring-boot-starter:2.2.2" />
+          <element id="library" level="project" name="Maven: org.mybatis.spring.boot:mybatis-spring-boot-autoconfigure:2.2.2" />
+          <element id="library" level="project" name="Maven: org.mybatis:mybatis:3.5.9" />
+          <element id="library" level="project" name="Maven: org.mybatis:mybatis-spring:2.0.7" />
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot:2.3.7.RELEASE" />
           <element id="library" level="project" name="Maven: mysql:mysql-connector-java:8.0.22" />
           <element id="library" level="project" name="Maven: jakarta.xml.bind:jakarta.xml.bind-api:2.3.3" />
@@ -75,6 +75,8 @@
           <element id="library" level="project" name="Maven: org.springframework:spring-core:5.2.12.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-jcl:5.2.12.RELEASE" />
           <element id="library" level="project" name="Maven: com.abranhe:bigdecimal:1.0.1" />
+          <element id="library" level="project" name="Maven: com.vaadin.external.google:android-json:0.0.20131108.vaadin1" />
+          <element id="library" level="project" name="Maven: org.projectlombok:lombok:1.18.20" />
         </element>
       </element>
       <element id="directory" name="META-INF">

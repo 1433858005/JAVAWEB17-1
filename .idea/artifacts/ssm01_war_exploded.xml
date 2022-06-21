@@ -36,7 +36,7 @@
           <element id="library" level="project" name="Maven: org.springframework:spring-web:5.3.18" />
           <element id="library" level="project" name="Maven: org.springframework:spring-jdbc:5.3.18" />
           <element id="library" level="project" name="Maven: org.springframework:spring-tx:5.3.18" />
-          <element id="library" level="project" name="Maven: org.projectlombok:lombok:1.18.22" />
+          <element id="library" level="project" name="Maven: org.projectlombok:lombok:1.18.24" />
           <element id="library" level="project" name="Maven: org.aspectj:aspectjweaver:1.9.9.1" />
           <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.36" />
           <element id="library" level="project" name="Maven: org.slf4j:slf4j-reload4j:1.7.36" />
