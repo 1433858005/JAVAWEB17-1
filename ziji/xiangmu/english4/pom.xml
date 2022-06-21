@@ -80,6 +80,10 @@
             <version>1.18.20</version>
             <!--            <scope>1.18.20</scope>-->
         </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
+        </dependency>
         <!--//*************************百度文本识别-->
 
 

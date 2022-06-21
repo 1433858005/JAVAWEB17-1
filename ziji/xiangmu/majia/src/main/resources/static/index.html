@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script> -->
+</head>
+
+<body>
+<div id="app">
+    <img src="" alt="" class="png0" @click="p(0)">
+    <img src="" alt="" class="png1" @click="p(1)">
+    <img src="" alt="" class="png2" @click="p(2)">
+    <img src="" alt="" class="png3" @click="p(3)">
+    <img src="" alt="" class="png4" @click="p(4)">
+    <img src="" alt="" class="png5" @click="p(5)">
+    <img src="" alt="" class="png6" @click="p(6)">
+    <img src="" alt="" class="png7" @click="p(7)">
+    <img src="" alt="" class="png8" @click="p(8)">
+    <img src="" alt="" class="png9" @click="p(9)">
+    <img src="" alt="" class="png10" @click="p(10)">
+    <img src="" alt="" class="png11" @click="p(11)">
+    <img src="" alt="" class="png12" @click="p(12)">
+    <img src="" alt="" class="png13" @click="p(13)">
+    <img src="" alt="" class="png14" @click="p(14)">
+    <img src="" alt="" class="zhi">
+</div>
+
+
+</body>
+<script src="https://cdn.staticfile.org/vue/2.7.0/vue.min.js"></script>
+<script>
+    const vm = new Vue({
+        el: '#app',
+        data: {
+            count: 0,
+            cc: ''
+        },
+        methods: {
+            a() {
+                let dizhi = location.pathname
+                let xmlHttp = new XMLHttpRequest();
+                xmlHttp.open("post", "a", true);
+                xmlHttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+                xmlHttp.send("dz=" + dizhi);
+                var tt = this
+                xmlHttp.onreadystatechange = function () {
+                    if (xmlHttp.readyState === 4 && xmlHttp.status === 200) {
+                        let b = JSON.parse(xmlHttp.responseText)
+                        let arr = b;
+                        // alert(arr[0])
+                        for (let i = 0; i < 14; i++) {
+                            let a = "png" + i
+                            // alert(a)
+                            document.getElementsByClassName(a)[0].setAttribute("src",
+                                "https://qpanpan.com/xz/tupian/zheng/" +
+                                arr[i] + ".png");
+                        }
+                        tt.zhixiangqi()
+                    }
+                }
+            },
+            zhuang() {
+                let xmlHttp = new XMLHttpRequest();
+                xmlHttp.open("post", "zhuang", true);
+                xmlHttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+                xmlHttp.send("username=stay");
+                var tt = this
+                xmlHttp.onreadystatechange = function () {
+                    if (xmlHttp.readyState === 4 && xmlHttp.status === 200) {
+                        let a = xmlHttp.responseText
+                        if (a === location.pathname) {
+                            // tt.fapai()
+                        }
+                    }
+                }
+            },
+            fapai() {
+                let dizhi = location.pathname
+                let xmlHttp = new XMLHttpRequest();
+                xmlHttp.open("post", "f", true);
+                xmlHttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+                xmlHttp.send("dz=" + dizhi);
+                xmlHttp.onreadystatechange = function () {
+                    if (xmlHttp.readyState === 4 && xmlHttp.status === 200) {
+                        let a = xmlHttp.responseText
+                        document.getElementsByClassName("png13")[0].setAttribute("src",
+                            "https://qpanpan.com/xz/tupian/zheng/" +
+                            a + ".png");
+                    }
+                }
+            },
+
+            p(n) {
+                let a = n
+                let xmlHttp = new XMLHttpRequest();
+                xmlHttp.open("post", "dp", true);
+                xmlHttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+                xmlHttp.send("pai=" + a + "&id=" + location.pathname);
+                var tt = this
+                xmlHttp.onreadystatechange = function () {
+
+                    if (xmlHttp.readyState === 4 && xmlHttp.status === 200) {
+                        tt.a()
+                        tt.xunhuan()
+                    }
+                }
+            },
+            zhixiangqi() {
+                let xmlHttp = new XMLHttpRequest();
+                xmlHttp.open("post", "zhi", true);
+                xmlHttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+                xmlHttp.send("z=" + location.pathname);
+                var tt = this
+                xmlHttp.onreadystatechange = function () {
+                    if (xmlHttp.readyState === 4 && xmlHttp.status === 200) {
+                        let a = xmlHttp.responseText
+                        document.getElementsByClassName("zhi")[0].setAttribute("src",
+                            "https://qpanpan.com/xz/tupian/m/" + a + ".png")
+                        if (a === "1") {
+                            clearInterval(tt.cc)
+                            tt.fapai()
+                        }
+                    }
+                }
+            },
+            xunhuan() {
+                this.cc = setInterval(this.a, 2000)
+            }
+
+
+
+
+
+        },
+        created() {
+            this.a()
+            this.zhuang()
+            this.xunhuan()
+        }
+    })
+</script>
+
+</html>

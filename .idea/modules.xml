@@ -15,6 +15,7 @@
       <module fileurl="file://$PROJECT_DIR$/ziji/lianxi/jdbc/jdbc003/jdbc003.iml" filepath="$PROJECT_DIR$/ziji/lianxi/jdbc/jdbc003/jdbc003.iml" />
       <module fileurl="file://$PROJECT_DIR$/ziji/lianxi/jdbc/jdbcceshi001/jdbcceshi001.iml" filepath="$PROJECT_DIR$/ziji/lianxi/jdbc/jdbcceshi001/jdbcceshi001.iml" />
       <module fileurl="file://$PROJECT_DIR$/ajax/json/json01.iml" filepath="$PROJECT_DIR$/ajax/json/json01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ziji/xiangmu/majia/majia.iml" filepath="$PROJECT_DIR$/ziji/xiangmu/majia/majia.iml" />
       <module fileurl="file://$PROJECT_DIR$/springmvc/mvc001/mvc001.iml" filepath="$PROJECT_DIR$/springmvc/mvc001/mvc001.iml" />
       <module fileurl="file://$PROJECT_DIR$/springmvc/mvc002/mvc002.iml" filepath="$PROJECT_DIR$/springmvc/mvc002/mvc002.iml" />
       <module fileurl="file://$PROJECT_DIR$/ziji/lianxi/redis/redis001/redis001.iml" filepath="$PROJECT_DIR$/ziji/lianxi/redis/redis001/redis001.iml" />

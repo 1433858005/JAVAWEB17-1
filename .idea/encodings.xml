@@ -2,8 +2,11 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/ajax/json/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ajax/json/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/servlet/001/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/servlet/001/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/servlet/st002rumen/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/servlet/st002rumen/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring/spring001/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring/spring001/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring/spring002/src/main/java" charset="UTF-8" />
@@ -51,7 +54,9 @@
     <file url="file://$PROJECT_DIR$/ziji/lianxi/jdbc/jdbc003/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ziji/lianxi/jdbc/jdbc003/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ziji/lianxi/jdbc/jdbcceshi001/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ziji/lianxi/jdbc/jdbcceshi001/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ziji/lianxi/redis/redis001/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ziji/lianxi/redis/redis001/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ziji/lianxi/shiro/shiro/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ziji/lianxi/shiro/shiro/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ziji/xiangmu/english/src/main/java" charset="UTF-8" />
@@ -60,6 +65,7 @@
     <file url="file://$PROJECT_DIR$/ziji/xiangmu/english3/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ziji/xiangmu/english4/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ziji/xiangmu/english4/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ziji/xiangmu/majia/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ziji/xiangmu/wenjian/src/main/java" charset="UTF-8" />
   </component>
 </project>

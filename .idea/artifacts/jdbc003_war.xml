@@ -3,10 +3,8 @@
     <output-path>$PROJECT_DIR$/ziji/lianxi/jdbc/jdbc003/target</output-path>
     <properties id="maven-jee-properties">
       <options>
-        <exploded>false</exploded>
         <module>jdbc003</module>
         <packaging>war</packaging>
-        <unpackNestedArchives>false</unpackNestedArchives>
       </options>
     </properties>
     <root id="archive" name="jdbcceshi003-1.0-SNAPSHOT.war">

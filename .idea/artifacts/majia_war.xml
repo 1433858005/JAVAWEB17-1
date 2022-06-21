@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="majia:war">
+    <output-path>$PROJECT_DIR$/ziji/xiangmu/majia/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>majia</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="majia-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="majia:war exploded" />
+    </root>
+  </artifact>
+</component>

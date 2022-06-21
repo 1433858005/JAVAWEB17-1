@@ -3,10 +3,8 @@
     <output-path>$PROJECT_DIR$/ziji/gf/crm/target</output-path>
     <properties id="maven-jee-properties">
       <options>
-        <exploded>false</exploded>
         <module>crm</module>
         <packaging>war</packaging>
-        <unpackNestedArchives>false</unpackNestedArchives>
       </options>
     </properties>
     <root id="archive" name="crm-0.0.1-SNAPSHOT.war">

@@ -23,6 +23,7 @@
     <file type="web" url="file://$PROJECT_DIR$/ziji/xiangmu/english" />
     <file type="web" url="file://$PROJECT_DIR$/ziji/xiangmu/english2" />
     <file type="web" url="file://$PROJECT_DIR$/ziji/xiangmu/english4" />
+    <file type="web" url="file://$PROJECT_DIR$/ziji/xiangmu/majia" />
     <file type="web" url="file://$PROJECT_DIR$/ziji/xiangmu/wenjian" />
   </component>
   <component name="JavaScriptSettings">
@@ -73,10 +74,11 @@
         <option value="$PROJECT_DIR$/ziji/lianxi/redis/redis001/pom.xml" />
         <option value="$PROJECT_DIR$/ziji/lianxi/shiro/shiro/pom.xml" />
         <option value="$PROJECT_DIR$/ziji/gf/crm/pom.xml" />
+        <option value="$PROJECT_DIR$/ziji/xiangmu/majia/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_16" project-jdk-name="17 (2)" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_16" project-jdk-name="corretto-1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
   <component name="SuppressionsComponent">

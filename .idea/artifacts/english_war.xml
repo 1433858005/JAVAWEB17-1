@@ -3,10 +3,8 @@
     <output-path>$PROJECT_DIR$/ziji/xiangmu/english/target</output-path>
     <properties id="maven-jee-properties">
       <options>
-        <exploded>false</exploded>
         <module>english</module>
         <packaging>war</packaging>
-        <unpackNestedArchives>false</unpackNestedArchives>
       </options>
     </properties>
     <root id="archive" name="english-1.0-SNAPSHOT.war">

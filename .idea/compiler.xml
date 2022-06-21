@@ -8,8 +8,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="json01" />
-        <module name="springboot001-1" />
         <module name="gfstudent" />
+        <module name="springboot001-1" />
+        <module name="majia" />
         <module name="ssm01" />
         <module name="spring004-mybatis" />
         <module name="spring010" />
@@ -56,6 +57,7 @@
       <module name="jdbcceshi001" target="1.8" />
       <module name="jiaqiang" target="11" />
       <module name="json01" target="1.8" />
+      <module name="majia" target="1.8" />
       <module name="mvc001" target="1.8" />
       <module name="mvc002" target="1.8" />
       <module name="redis001" target="1.8" />
@@ -86,6 +88,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="majia" options="-parameters" />
       <module name="springboot001" options="-parameters" />
       <module name="springboot001-1" options="-parameters" />
       <module name="springboot002" options="-parameters" />
